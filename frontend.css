@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  background-color: darkblue;
+}
+.feature1 {
+  background-color: cyan;
+}
+.feature2 {
+  background-color: darkgoldenrod;
+}
+.feature3 {
+  background-color: darkgreen;
+}
+.signup {
+  background-color: darkmagenta;
+}
+.content {
+  background-color: darkorange;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > div:nth-child(4) {
+  flex: 2;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container2 > div {
+  flex-basis: 33.3%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 > .signup {
+  flex-basis: 100%;
+  height: 20vh;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* for tablet */
+@media only screen and (max-width: 700px) {
+  .container > .container2:nth-child(3) {
+    order: 2;
+  }
+  .container2 > .signup {
+    order: -1;
+    flex-basis: 50%;
+    height: 25vh;
+  }
+  .container2 > div {
+    flex-basis: 50%;
+  }
+}
+
+/* for mobile */
+@media only screen and (max-width: 600px) {
+  .container > .container2:nth-child(3) {
+    order: 2;
+  }
+  .container2 > .signup {
+    order: -1;
+    flex-basis: 100%;
+    height: 10vh;
+  }
+  .container2 > div {
+    flex-basis: 100%;
+    height: 10vh;
+  }
+}
