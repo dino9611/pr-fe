@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tengah{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    background-color: tan;
+}
+
+.signup{
+    background-color: cadetblue;
+}
+
+.feature1{
+    background-color: olive;
+}
+
+.feature2{
+    background-color: navajowhite;
+}
+
+.feature3{
+    background-color: salmon;
+}
+
+.content{
+    background-color:teal;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container > div{
+    flex: 1;
+}
+
+.container > div:nth-child(2){
+    flex: 3;
+}
+
+.container > div:nth-child(3){
+    flex: 3;
+}
+
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container2 > div{
+    flex-basis: 33.3%;
+    height: 40vh;
+}
+
+.container2 > .signup{
+    flex-basis: 100%;
+    height: 10vh;
+}
+
+@media only screen and (max-width: 800px) {
+    .content{
+        order: 1;
+    }
+
+    .container2{
+        order: 2;
+    }
+    
+    .container2 > div{
+        flex-basis: 50% !important;
+        height: 25vh !important;
+    }
+
+    .signup{
+        order: -1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content{
+        order: 1;
+        flex: 3 !important;
+    }
+
+    .container2 > div{
+        flex-basis: 100% !important;
+        height: 13vh !important;
+    }
+}
