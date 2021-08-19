@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .container > div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+      background-color:lightskyblue;
+  }
+
+  .container2 {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: normal !important;
+  }
+
+  .container2 > div {
+    flex: 1;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .container3 {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: normal !important;
+  }
+
+  .container3 > div {
+    flex: 1;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+  }
+
+  .container4 {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: normal !important;
+  }
+
+  .container4 > div {
+    flex: 1;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .feature1 {
+      background-color: gold;
+  }
+
+  .feature2{
+      background-color:mediumslateblue;
+  }
+  
+  .feature3{
+      background-color:salmon;
+  }
+
+  .signup {
+    background-color:lightskyblue;
+}
+
+.content {
+    background-color: lightsteelblue;
+    flex : 2 !important;
+    
+}
+
+
+
+.hidden {
+    display: none !important;
+  }
+
+@media only screen and (max-width: 600px) {
+    .container3 {
+        order : 4;
+    }
+    .hidden {
+      display: flex !important;
+      order: 4;
+    }
+    .dalem {
+      display: none !important;
+    }
+    .hidden2 {
+      display: none !important;
+    }
+    
+  }
+
+  @media only screen and (max-width: 480px) {
+    .dalem2 {
+        display: none !important;
+      }
+    
+    .show {
+      display: flex !important;
+      order: 4;
+    }
+    .show2 {
+      display: flex !important;
+      order: 5;
+    }
+}
