@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background-color: aqua;
+}
+
+.feat1 {
+    background-color: darkseagreen;
+}
+
+.feat2 {
+    background-color: burlywood;
+}
+
+.feat3 {
+    background-color: red;
+}
+
+.signup {
+    background-color: darkorange;
+}
+
+.content {
+    background-color: darksalmon;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container > div {
+    flex: 2;
+}
+
+.container > div:nth-child(2) {
+    flex: 3;
+}
+
+.container > div:nth-child(3) {
+    flex: 3;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container2 > div {
+    flex-basis: 33.3%;
+    height: 40vh;
+}
+
+.container2 > .signup {
+    flex-basis: 100%;
+    height: 10vh;
+}
+
+/* For Tablet */
+@media only screen and (max-width: 768px) {
+    .container2 {
+        order: 4;
+    }
+    .container2 > div {
+        flex-basis: 50% !important;
+        height: 20vh !important;
+    }
+
+    .container2 > .signup {
+        order: -1;
+    }
+}
+
+/* For Mobile */
+@media only screen and (max-width: 600px) {
+    .container2 > div {
+        flex-basis: 100% !important;
+        height: 10vh !important;
+    }
+}
