@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .tengah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    background-color: burlywood;
+  }
+  
+  .signup {
+    background-color: coral;
+  }
+  
+  .feature1 {
+    background-color: cornflowerblue;
+  }
+  
+  .feature2 {
+    background-color: darkkhaki;
+  }
+  .feature3 {
+    background-color: rgb(9, 92, 247);
+  }
+  .content {
+    background-color: darkseagreen;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container > div {
+    height: 20vh;
+  }
+  
+  .container > div:nth-child(2) {
+    flex: 3;
+  }
+  
+  .container2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container2 > div {
+    flex-basis: 33.3%;
+    height: 40vh;
+  }
+  
+  .container2 > .signup {
+    flex-basis: 100%;
+    height: 20vh;
+  }
+  
+  /* for tablet */
+  @media only screen and (max-width: 768px) {
+      .header {
+          order: -5;
+      }
+      .content {
+          order: -4;
+          height: 30vh!important;
+      }
+      .signup {
+        order:-3;
+        flex-basis: 50% !important;
+        height: 25vh!important;
+      }
+      /* .container2 {
+        order: -1;
+        flex-basis: 50% !important;
+        height: 40vh!important;
+      } */
+      .feature1 {
+        flex-basis: 50% !important;
+        height: 25vh!important;
+      }
+      .feature2 {
+        flex-basis: 50% !important;
+        height: 25vh!important;
+      }
+      .feature3 {
+        flex-basis: 50% !important;
+        height: 25vh!important;
+      }
+  }
+  
+  /* for mobile */
+  @media only screen and (max-width: 600px) {
+    .header {
+      order: -5;
+      height: 15vh!important;
+  }
+  .content {
+      order: -4;
+      height: 25vh!important;
+  }
+  .signup {
+    order: -3;
+    flex-basis: 100%!important;
+    height: 15vh!important;
+  }
+  .feature1 {
+    order: -2;
+    flex-basis: 100%!important;
+    height: 15vh!important;
+  }
+  .feature2 {
+    order: -1;
+    flex-basis: 100%!important;
+    height: 15vh!important;
+  }
+  .feature3 {
+    order: 0;
+    flex-basis: 100%!important;
+    height: 15vh!important;
+  }
+  }
