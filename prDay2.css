@@ -86,9 +86,9 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .content{
+    .container > content{
         order: 1;
-        flex: 3 !important;
+        flex: 3;
     }
 
     .container2 > div{
