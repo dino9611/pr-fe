@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* container */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+.header {
+    background-color: tan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+/* apa ya namanya */
+.jeroan {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+.jeroan > .feature1 {
+    background-color: teal;
+    flex-basis: 33.3%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jeroan > .feature2 {
+    background-color: violet;
+    flex-basis: 33.4%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jeroan > .feature3 {
+    background-color: yellow;
+    flex-basis: 33.3%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jeroan > .signup {
+    background-color: springgreen;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+/* content */
+.content {
+    background-color: salmon;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* for tablet */
+@media only screen and (max-width: 768px) {
+    .header {
+        height: 15vh;
+    }
+    .content {
+        height: 50vh;
+    }
+    .jeroan {
+        order: 99;
+    }
+    .jeroan > .feature1 {
+        flex-basis: 50%;
+        order: 2;
+    }
+    .jeroan > .feature2 {
+        flex-basis: 50%;
+        order: 4;
+    }
+    .jeroan > .feature3 {
+        flex-basis: 50%;
+        order: 3;
+    }
+    .jeroan > .signup {
+        flex-basis: 50%;
+        height: 35vh;
+        order: 1;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header {
+        height: 15vh;
+    }
+    .jeroan {
+        order: 99;
+    }
+    .jeroan > .feature1 {
+        flex-basis: 100%;
+        order: 2;
+        height: 20vh;
+    }
+    .jeroan > .feature2 {
+        flex-basis: 100%;
+        order: 4;
+        height: 20vh;
+    }
+    .jeroan > .feature3 {
+        flex-basis: 100%;
+        order: 3;
+        height: 20vh;
+    }
+    .jeroan > .signup {
+        flex-basis: 100%;
+        height: 35vh;
+        order: 1;
+        height: 20vh;
+    }
+}
