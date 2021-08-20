@@ -1,0 +1,103 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.center-align {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: teal;
+    color: white;
+    height: 5vh;
+    position: fixed;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: lightblue;
+    flex: 2.5;
+    margin-top: 5vh;
+}
+
+.feature-container {
+    display: flex;
+    flex: 4;
+    flex-wrap: wrap;
+}
+
+.feature-container > div {
+    flex-basis: 33.33%;
+    height: 35vh;
+}
+
+.feature-1 {
+    background-color: orange;
+}
+
+.feature-2 {
+    background-color: lightsalmon;
+}
+
+.feature-3 {
+    background-color: salmon;
+}
+
+.feature-container > .sign-up-1 {
+    background-color: cyan;
+    display: none;
+}
+
+.sign-up-2 {
+    background-color: cyan;
+    flex: 1;
+}
+
+.content {
+    background-color: turquoise;
+    flex: 3.5;
+}
+
+/* TABLET SIZE */
+@media (max-width: 768px) {
+    .feature-container {
+        order: 4;
+    }
+    
+    .feature-container > div {
+        flex-basis: 50%;
+        height: 25vh;
+    }
+    
+    .feature-container > .sign-up-1 {
+        display: flex;
+        order: -1;
+        width: 50vw;
+    }
+
+    .sign-up-2 {
+        display: none;
+    }
+
+    .content {
+        flex: 3.5;
+        order: 2;
+    }
+}
+
+/* MOBILE SIZE */
+@media (max-width: 600px) {
+    .feature-container > div {
+        flex-basis: 100%;
+        height: 12vh;
+    }
+}

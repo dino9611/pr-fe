@@ -1,0 +1,93 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.center-align {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: teal;
+    color: white;
+    flex: 0.5;
+}
+
+.header {
+    background-color: lightblue;
+    flex: 2.5;
+}
+
+.feature-container {
+    display: flex;
+    flex: 4;
+    flex-wrap: wrap;
+}
+
+.feature-container > div {
+    flex-basis: 33.33%;
+    height: 35vh;
+}
+
+.feature-1 {
+    background-color: orange;
+}
+
+.feature-2 {
+    background-color: lightsalmon;
+}
+
+.feature-3 {
+    background-color: salmon;
+}
+
+.feature-container > .sign-up {
+    background-color: cyan;
+    flex-basis: 100%;
+    height: 10vh;
+}
+
+.content {
+    background-color: turquoise;
+    flex: 3;
+}
+
+/* TABLET SIZE */
+@media (max-width: 768px) {
+    .feature-container {
+        order: 4;
+    }
+    
+    .feature-container > div,
+    .feature-container > .sign-up {
+        flex-basis: 50%;
+        height: 25vh;
+    }
+    
+    .feature-container > .sign-up {
+        order: -1;
+    }
+
+    .content {
+        flex: 3.5;
+        order: 2;
+    }
+}
+
+/* MOBILE SIZE */
+@media (max-width: 600px) {
+    .feature-container > div,
+    .feature-container > .sign-up {
+        flex-basis: 100%;
+        height: 12vh;
+    }
+}
