@@ -1,0 +1,770 @@
+* {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-container {
+    padding: 0px 3%;
+}
+
+
+/* HEADER */
+
+
+.header {
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0px;
+}
+
+.bitco {
+    /* background-color: cyan; */
+    margin-left: 5%;
+    padding: 1.5% 1%;
+    width: 10%;
+    font-weight: 800;
+
+}
+
+.menu-bars {
+    margin: 1.25%;
+    font-size: 1.25em;
+    display: none;
+}
+
+.menu-tengah {
+    /* background-color: coral; */
+    padding: 1.5% 1%;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    margin-left: 25%;
+    margin-right: -5%;
+    font-weight: 600;
+}
+
+
+.signin {
+    /* background-color: crimson; */
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1.25% 1%;
+    width: 6.5%;
+    /* text-transform: uppercase; */
+    /* font-size: 1.1em; */
+    font-weight: 600;
+    border-radius: 70px;
+    /* border: 2px solid var(--primary-color); */
+    border: 2px solid;
+    text-align: center;
+    transition: 300ms;
+}
+
+.signin:hover {
+    cursor: pointer;
+    /* color: var(--primary-color); */
+    color: cyan;
+    background-color:black;
+    opacity: 0.6;
+  }
+
+/* HEADER END */
+
+/* JUMBOTRON 1 */
+
+.jumbo1 {
+    display: flex;
+    margin-left: 6%;
+    margin-right: 5%;
+}
+
+
+.judul {
+margin-top: 5%;
+margin-right: 40%;
+font-size: 2em;
+}
+
+.kalimat {
+    margin-top: 2%;
+    margin-right: 30%;
+
+}
+
+.menu2 {
+    margin-top: 12.5%;
+}
+
+.input-text {
+    margin-left: 5%;
+    border-color: transparent;
+    border-radius: 20px;
+    padding: 2% 0% 2% 1%;
+    width: 40%;
+    font-weight: 600;
+    box-shadow: 0px 9px 17px 0px rgba(117, 117, 117, 0.39);
+    -webkit-box-shadow: 0px 9px 17px 0px rgba(117, 117, 117, 0.39);
+    -moz-box-shadow: 0px 9px 17px 0px rgba(117, 117, 117, 0.39);
+}
+
+.menu2 > .input-text:focus {
+    outline: transparent;
+}
+
+.menu2 > .input-text::placeholder {
+    font-weight: 500;
+}
+
+.menu2 > button {
+    margin-left: 5%;
+    padding: 2% 0% 2% 0%;
+    text-align: center;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: cyan;
+    font-weight: 800;
+    width: 7vw;
+    transition: 300ms;
+
+}
+
+.menu2 > button:hover {
+    background-color: black;
+    cursor: pointer;
+    color: cyan;
+    opacity: .6;
+}
+
+/* .kanan {
+    background-color: cadetblue;
+
+} */
+
+.pic1 {
+    height: 50vh;
+    width: 44.5vw;
+    
+}
+
+/* JUMBOTRON 1 END */
+
+/* logo */
+
+.logo {
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: -2.5%;
+    /* background-color: blueviolet; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+.pic-logo {
+    width: 40%;
+    height: auto;
+    opacity: .6;
+}
+
+/* logo End */
+
+/* JUMBOTRON 2 */
+
+.jumbo2 {
+    margin-top: 5%;
+    display: flex;
+    margin-left: 6%;
+    margin-right: 5%;
+}
+
+.pic2 {
+    height: 50vh;
+    width: 44.5vw;
+    
+}
+
+.judul-jumbo2 {
+    margin-top: 5%;
+    margin-right: 0%;
+    margin-left: 10%;
+    font-size: 1.5em;
+    }
+    
+.kalimat-jumbo2 {
+    margin-top: 2%;
+    margin-right: 0%;
+    margin-left: 10%;
+    
+}
+
+.menu4 {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.menu4 > button {
+    margin-left: 0%;
+    /* padding: 1% 1% 1% 1%; */
+    padding: 2% 0% 2% 0%;
+    text-align: center;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: cyan;
+    font-weight: 800;
+    width: 7vw;
+    transition: 300ms;
+
+}
+
+.menu4 > button:hover {
+    background-color: black;
+    cursor: pointer;
+    color: cyan;
+    opacity: .6;
+}
+
+/* JUMBOTRON 2 END */
+
+/* JUMBOTRON 3 */
+
+.jumbo3 {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 5%;
+}
+
+.judul-jumbo3 {
+    margin-top: 5%;
+    margin-right: 40%;
+    font-size: 1.5em;
+}
+    
+.kalimat-jumbo3 {
+    margin-top: 2%;
+    margin-right: 25%;
+
+}
+
+.menu6 {
+    margin-top: 10%;
+}
+
+.menu6 > button {
+    margin-left: 5%;
+    /* padding: 1% 1% 1% 1%; */
+    padding: 2% 0% 2% 0%;
+    text-align: center;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: cyan;
+    font-weight: 800;
+    width: 7vw;
+    transition: 300ms;
+
+}
+
+.menu6 > button:hover {
+    background-color: black;
+    cursor: pointer;
+    color: cyan;
+    opacity: .6;
+}
+
+.pic3 {
+    height: 50vh;
+    width: 44.5vw;
+    
+}
+
+/* JUMBOTRON 3 END*/
+
+/* JUMBOTRON 4 */
+
+.jumbo4 {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 5%;
+    padding: 1.5%;
+    box-shadow: -9px 6px 10px -2px rgba(189,186,186,0.75);
+    -webkit-box-shadow: -9px 6px 10px -2px rgba(189,186,186,0.75);
+    -moz-box-shadow: -9px 6px 10px -2px rgba(189,186,186,0.75);
+}
+
+.kiri4 > h3 {
+    margin-right: 40%;
+
+}
+
+.kiri4 > p {
+    margin-top: 1%;
+    margin-right: 30%;
+
+}
+
+
+.kanan4 > button {
+    margin-top: 20%;
+    padding: 11%;
+    /* padding: 2% 0% 2% 1%; */
+    text-align: center;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: cyan;
+    font-weight: 800;
+    width: 7vw;
+    transition: 300ms;
+
+}
+
+.kanan4 > button:hover {
+    background-color: black;
+    cursor: pointer;
+    color: cyan;
+    opacity: .6;
+}
+
+/* JUMBOTRON 4 END*/
+
+/* JUMBOTRON 5 */
+
+.jumbo5 {
+    margin-top: 5%;
+    display: flex;
+    margin-left: 6%;
+    margin-right: 5%;
+}
+
+.pic4 {
+    height: 50vh;
+    width: 44.5vw;
+    
+}
+
+.kalimat-jumbo5 {
+    margin-top: 2%;
+    margin-right: 0%;
+    margin-left: 10%;
+}
+
+.menu8 {
+    /* background-color: lawngreen; */
+    margin-top: 2%;
+    margin-right: 0%;
+    margin-left: 10%;
+}
+
+.input-text2 {
+    /* background-color: lightcoral; */
+    margin-top: 5%;
+    border-color: transparent;
+    background-color: #ededed;
+    border-radius: 20px;
+    padding: 2% 0% 2% 1%;
+    width: 98%;
+    font-weight: 600;
+
+}
+
+.input-text2:focus {
+    outline: transparent;
+}
+
+.input-text2::placeholder {
+    font-weight: 500;
+    text-align: center;
+}
+
+.sub {
+    margin-top: 3%;
+    margin-bottom: 1%;
+    padding: 2% 0% 2% 1%;
+    text-align: center;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: cyan;
+    font-weight: 800;
+    width: 100%;
+    transition: 300ms;
+
+}
+
+.sub:hover {
+    background-color: black;
+    cursor: pointer;
+    color: cyan;
+    opacity: .6;
+}
+
+/* JUMBOTRON 5 END*/
+
+/* JUMBOTRON LAST */
+
+.jumbo6 {
+    /* background-color: lime; */
+    margin-top: 5%;
+    display: flex;
+}
+
+
+.kiri-last p {
+    margin-top: 3%;
+    margin-left: 5%;
+    font-size: .75em;
+    margin-right: -5%;
+}
+
+.kanan-last {
+    margin-left: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 33.3%;
+}
+
+.helpful {
+    display: flex;
+    line-height: 150%;
+    flex-direction: column;
+}
+
+.about {
+    display: flex;
+    line-height: 150%;
+    flex-direction: column;
+}
+
+.social {
+    display: flex;
+    line-height: 150%;
+    flex-direction: column;
+}
+
+.help1 {
+    font-weight: 700;
+    margin-bottom: 10%;
+}
+
+.about1 {
+    font-weight: 700;
+    margin-bottom: 10%;
+}
+
+.social1 {
+    font-weight: 700;
+    margin-bottom: 10%;
+}
+
+/* JUMBOTRON LAST END */
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-left: 51.5%;
+    margin-right: 5%;
+    font-size: .7em;
+}
+
+/* FOOTER END */
+
+/* for tablet */
+@media only screen and (max-width: 768px) {
+    /* HEADER */
+
+
+.header {
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0px;
+}
+
+.bitco {
+    /* background-color: cyan; */
+    margin-left: 5%;
+    padding: 1.5% 1%;
+    width: 10%;
+    font-weight: 800;
+
+}
+
+.menu-tengah {
+    width: 40%;
+    margin-left: 15%;
+
+}
+
+.signin {
+
+    padding: 1% 1%;
+    width: 7%;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+/* HEADER END */
+
+/* JUMBOTRON 1 */
+
+.judul {
+margin-top: 5%;
+margin-right: 0%;
+font-size: 1.5em;
+}
+
+.kalimat {
+    margin-top: 2%;
+    margin-right: 0%;
+    font-size: 1rem;
+
+}
+
+.input-text {
+    margin-left: 0%;
+    padding: 2% 0% 2% 1%;
+    width: 97%;
+
+}
+
+.menu2 > .input-text::placeholder {
+    text-align: center;
+}
+
+.menu2 > button {
+    margin-top: 2%;
+    margin-left: 0%;
+    width: 100%;
+}
+
+
+/* JUMBOTRON 1 END */
+
+/* JUMBOTRON 2 */
+
+.jumbo2 {
+    margin-top: 5%;
+    display: flex;
+    margin-left: 6%;
+    margin-right: 5%;
+}
+
+.judul-jumbo2 {
+    font-size: 1.25em;
+    }
+    
+.menu4 {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.menu4 > button {
+    width: 100%;
+
+}
+
+/* JUMBOTRON 2 END */
+
+/* JUMBOTRON 3 */
+
+.judul-jumbo3 {
+    margin-right: 0%;
+    font-size: 1.25em;
+}
+    
+.kalimat-jumbo3 {
+    margin-top: 2%;
+    margin-right: 0%;
+
+}
+
+.menu6 > button {
+    margin-left: 0%;
+    width: 100%;
+
+}
+
+/* JUMBOTRON 3 END*/
+
+/* JUMBOTRON 4 */
+
+.kiri4 > p {
+    margin-right: 50%;
+
+}
+
+.kanan4 {
+    margin-left: -40%;
+    margin-right: -2%;
+    width: 50%;
+}
+
+.kanan4 > button {
+    margin-top: 10%;
+    margin-left: 0%;
+    padding: 2.5% 0% 2.5% 0%;
+    width: 100%;
+}
+
+
+/* JUMBOTRON 4 END*/
+
+/* JUMBOTRON LAST */
+
+.kanan-last {
+    font-size: .75em;
+}
+
+/* JUMBOTRON LAST END */
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-left: 51.5%;
+    margin-right: 5%;
+    font-size: .5em;
+}
+
+/* FOOTER END */
+
+}
+
+/* for mobile */
+@media only screen and (max-width: 600px) {
+
+/* HEADER */
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0px;
+}
+
+.bitco {
+    margin-left: 5%;
+    padding: 1.5% 1%;
+    width: 10%;
+    font-weight: 800;
+
+}
+
+.menu-bars {
+    margin: 1.25%;
+    font-size: 1.25em;
+    display: block;
+}
+
+.menu-tengah {
+    display: none;
+}
+
+
+.signin {
+    display: none;
+}
+
+/* HEADER END */
+
+/* JUMBOTRON 1 */
+
+.judul {
+    font-size: 1em;
+}
+
+.kalimat {
+    margin-right: 0%;
+    font-size: .75rem;
+
+}
+
+.input-text {
+    margin-left: 0%;
+    padding: 2% 0% 2% 1%;
+    width: 97%;
+
+}
+  
+    
+/* JUMBOTRON 1 END */
+
+/* JUMBOTRON 2 */
+
+.jumbo2 {
+    margin-left: 5%;
+}
+
+.judul-jumbo2 {
+    font-size: 1em;
+    }
+
+.kalimat-jumbo2 {
+    font-size: .75rem;
+    
+}
+
+/* JUMBOTRON 2 END */
+
+/* JUMBOTRON 3 */
+
+.judul-jumbo3 {
+    font-size: 1em;
+}
+    
+.kalimat-jumbo3 {
+    font-size: .75rem;
+
+}
+
+/* JUMBOTRON 3 END*/
+
+/* JUMBOTRON 4 */
+
+.kiri4 > h3 {
+    font-size: 1em;
+}
+.kiri4 > p {
+    margin-right: 50%;
+    font-size: .75rem;
+
+}
+
+.kanan4 {
+    margin-left: -47.5%;
+}
+
+
+/* JUMBOTRON 4 END*/
+
+/* JUMBOTRON 5 */
+
+.kalimat-jumbo5 {
+    font-size: .75rem;
+}
+
+/* JUMBOTRON 5 END*/
+
+
+/* JUMBOTRON LAST */
+
+.kiri-last p {
+    font-size: .65rem;
+
+}
+
+.kanan-last {
+    margin-left: 31%;
+    font-size: .65rem;
+}
+
+/* JUMBOTRON LAST END */
+
+}
