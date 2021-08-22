@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --main-font: #381777;
+  --color-logo: #ff8878;
+  --back-btn: #fff5f4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+}
+
+.header .logo {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo i {
+  margin-right: 3%;
+  color: var(--color-logo);
+}
+
+.logo p {
+  font-weight: 700;
+  color: var(--main-font);
+  font-size: 0.9em;
+}
+
+.header .nav {
+  flex-grow: 1;
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+
+.nav p {
+  font-size: 0.7em;
+  color: #cfd1e4;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav p:hover {
+  color: var(--main-font);
+}
+
+.sign-in {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.sign-in button {
+  font-size: 0.7em;
+  font-weight: 700;
+  padding: 4% 10%;
+  color: var(--color-logo);
+  background-color: var(--back-btn);
+  border: none;
+  border-radius: 40px;
+}
+
+.jumbotron {
+  /* margin-top: 2%; */
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.jumbotron h1 {
+  font-size: 2.5em;
+  width: 35%;
+  text-align: center;
+  color: var(--main-font);
+}
+
+.jumbotron p {
+  height: 30%;
+  color: #cfd1e4;
+  font-size: 0.8em;
+  font-weight: 500;
+}
