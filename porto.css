@@ -1,0 +1,207 @@
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --primary-color:#f1b505;
+    --text-color: #1d1d1d;
+    --text-secondary: #adadad;
+
+}
+
+
+.maincontainer {
+    padding: 0px 7%
+}
+/* !Header Start */
+.header {
+    background-color:burlywood;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0px;
+   
+}
+.bitco {
+    /* background-color: brown; */
+    padding: 1.5%;
+    font-weight: 800;
+    font-size: 1.3em;
+}
+.menu {
+    /* background-color: cadetblue; */
+    display: flex;
+    width: 50%;
+}
+.menu > div:first-child {
+    /* background-color: chartreuse; */
+    margin-right: auto;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    padding: 3%;
+    font-weight: 600;
+}
+.signIn {
+    /* background-color: crimson; */
+    width: 15%;
+    padding: 3% 1.5%;
+    text-align: center;
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    transition: 300ms;
+    font-weight: 600;
+}
+.menu > div > div:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: 300ms;
+}
+.signIn:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+    opacity: 0.6;
+}
+.menu-bars{
+    display: none;
+    margin: 1.5%;
+    font-size: 1.3em;
+}
+/* !Header Finish */
+
+/* Jumbotron1 */
+.jumbotron1{
+    /* background-color: burlywood; */
+    display: flex;
+    margin-top: 4%;
+    
+}
+.jumbotron1 > div {
+    flex: 1;
+    padding: 2%;
+    
+}
+.gambar1 {
+    margin-top: 8%;
+    height: 60vh;
+    width: 100%;
+}
+.hurufGede{
+    margin: 3% 0px;
+    font-size: 3.5em;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.menu1 {
+    /* background-color: cyan; */
+    width: 96%;
+}
+/* .jumbotron1 > :nth-child(2){
+    background-color: darkblue;
+} */
+.jumbotron1 p {
+    /* background-color: darkmagenta; */
+    color: var(--text-secondary);
+    margin-top: 10%;
+    /* padding-top: 10%; */
+    font-size: 1.2em;
+    width: 75%;
+
+}
+.menu2{
+    margin-top: 10%;
+}
+.menu2 > .input-text {
+    border-color: transparent;
+    color: var(--text-secondary);
+    border-radius: 10px;
+    padding: 3px;
+    width: 35%;
+    margin-right: 5%;
+    text-align: center;
+    box-shadow: -2px 10px 42px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 10px 42px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 10px 42px -5px rgba(0,0,0,0.75);
+}
+.menu2 > .input-text:focus {
+    outline: transparent;
+}
+.menu2 > .input-text::placeholder {
+    border-color: transparent;
+    font-weight: 600;
+}
+.menu2 > button {
+    padding: 2.5%;
+    text-align: center;
+    border-radius: 40px;
+    border-color: transparent;
+    background-color: var(--primary-color);
+    font-weight: 600;
+    width: 35%;
+}
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 300ms;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* Header */
+    .menu {
+        width: 70%;
+    }
+    .menu > div:first-child {
+        margin-left: 8%;
+    }
+    .maincontainer{
+        padding: 0px 3%;
+    }
+    .signIn {
+        padding: 3% 1%;
+    }
+    /* HeaderFinish */
+    /* Jumbotron1 */
+    .hurufGede{
+        font-size: 2.5em;
+    }
+    .menu2 > .input-text {
+        width: 90%;
+        font-size: 1em;
+        height: 4vh;
+        display: block;
+        border-radius: 200px;
+    }
+    .menu2 > button {
+        display: block;
+        margin-top: 7%;
+        width: 94%;
+        font-weight: 900;
+
+    }
+    .jumbotron1 p {
+        font-size: 1em;
+        width: 90%;
+        font-weight: 500;
+    }
+    .gambar1 {
+        margin-top: 10%;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px){
+    /* Header */
+    .menu-bars{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    /* HeaderFinish */
+    .jumbotron1{
+        flex-direction: column-reverse;
+    }
+    
+}
