@@ -1,0 +1,364 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --primary-color: #322c78;
+    --secondary-color: #ff7d6b;
+}
+
+.maincontainer {
+    padding: 0px 8%;
+}
+/*! Header Start */
+.header {
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 0px;
+    /* margin-top: 2%; */
+
+}
+
+.logo {
+    /* background-color: burlywood; */
+    display: flex;
+    padding: 1%;
+    width: 10%;
+    justify-content: space-evenly;
+}
+.logo > div:last-child{
+    /* padding-top: 3%; */
+    font-size: 1.5em;
+    padding: 1%;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.fab {
+    color: var(--secondary-color);
+    font-size: 2.1em;
+}
+
+.menu {
+    /* background-color: cornflowerblue; */
+    display: flex;
+    width: 40%;
+    color: var(--primary-color);
+
+}
+.menu > div:first-child {
+    /* background-color: darkmagenta; */
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    padding-top: 4%;
+   
+}
+.login {
+    /* background-color: darkgreen; */
+    width: 8%;
+    text-align: center;
+    padding: 2%;
+    border: 2px solid var(--secondary-color);
+    border-radius: 40px;
+    color: var(--primary-color);
+}
+
+.menu-bars{
+    display: none;
+    padding: 2%;
+    font-size: 1.3em;
+}
+.login:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+    opacity: 1;
+    transition: 300ms;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,44,120,1) 35%, rgba(255,125,107,1) 100%);
+    /* color: white; */
+}
+.menu:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+    opacity: 0.6;
+    transition: 300ms;
+}
+
+/*! Header Finish */
+
+/*! Jumbotron1 Start */
+.jumbotron1{
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0px;
+}
+.intro-text {
+    /* background-color: blanchedalmond; */
+    width: 40%;
+}
+.intro-text> div:first-child{
+    /* background-color: crimson; */
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.intro-text > div:last-child {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+.menuButton {
+    /* background-color: darkgreen; */
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+    margin-top: 2%;
+    /* padding-top: 5%; */
+    
+}
+.menuButton> button {
+    flex-basis: 48%;
+}
+.menuButton > div{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.6rem;
+    margin-top: 3%;
+    color: var(--primary-color);
+}
+.Yearly {
+    border: 2px solid var(--secondary-color);
+    background: transparent;
+    color: var(--primary-color);
+    width: 1.5rem;
+    height: 2rem;
+    cursor: pointer;
+    margin-right: 4%;
+    border-radius: 20px;
+}
+.Monthly {
+    border: 2px solid var(--secondary-color);
+    background: transparent;
+    color: var(--primary-color);
+    width: 1.5rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.Yearly:hover {
+    color: var(--secondary-color);
+    opacity: 0.6;
+    transition: 300ms;
+}
+.Monthly:hover {
+    color: var(--secondary-color);
+    opacity: 0.6;
+    transition: 300ms;
+}
+
+.menuBox {
+    /* background-color: sienna; */
+    display: flex;
+    width: 72%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+.menuBox > div{
+    /* background-color: teal; */
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid; */
+    align-items: center;
+    margin-right: 1%;
+    margin-left: 1%;
+    flex: 1;
+    height: 35vh;
+    justify-content: center;
+    color: var(--primary-color);
+}
+.boxKiri > div:first-child{
+    font-size: 1.3rem;
+
+}
+.boxKiri > div:nth-child(2){
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+.boxKiri > div:nth-child(3){
+    font-size: 0.8rem;
+}
+.boxKiri > button{
+    font-size: 1rem;
+    border: 2px solid var(--secondary-color);
+    background: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 40px;
+    height: 6vh;
+    width: 50%;
+}
+
+.boxTengah > div:first-child{
+    font-size: 1.3rem;
+
+}
+.boxTengah > div:nth-child(2){
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+.boxTengah > div:nth-child(3){
+    font-size: 0.8rem;
+}
+.boxTengah > button{
+    font-size: 1rem;
+    border: 2px solid var(--secondary-color);
+    background: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 40px;
+    height: 6vh;
+    width: 50%;
+}
+.boxKanan > div:first-child{
+    font-size: 1.3rem;
+
+}
+.boxKanan > div:nth-child(2){
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+.boxKanan > div:nth-child(3){
+    font-size: 0.8rem;
+}
+
+.boxKanan > button{
+    font-size: 1rem;
+    border: 2px solid var(--secondary-color);
+    background: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 40px;
+    height: 6vh;
+    width: 50%;
+}
+.menuBox button:hover{
+    background-color: var(--secondary-color);
+}
+.menuBox > div:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,44,120,1) 35%, rgba(255,125,107,1) 100%);
+    transition: 400ms;
+    color: white;
+    cursor: pointer;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+
+
+
+/*!Jumbotron1 Finish */
+
+
+@media only screen and (max-width: 768px){
+    /* Header */
+    .maincontainer{
+        padding: 2%;
+    }
+    .menu {
+        width: 55%;
+    }
+    /* .menu > div:first-child {
+        margin-left: 8%;
+    } */
+
+    .login {
+        /* background-color: darkgreen; */
+        width: 10%;
+        border-radius: 30px;
+    }
+    .logo > div:last-child{
+        font-size: 1.3em;
+    }
+    .logo{
+        width: 20%;
+    }
+    .fab {
+        font-size: 2em;
+    }
+    .intro-text {
+        /* background-color: blanchedalmond; */
+        width: 60%;
+    }
+    .menuBox > div{
+        height: 20vh;
+    }
+    .menuBox  button {
+        font-size: 0.7rem;
+        height: 4vh;
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    /* Header */
+    .menu-bars{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    .logo{
+        width: 35%;
+    }
+    .menuBox {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1%;
+        flex-direction: column;
+    }
+    
+    .menuBox > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 1%;
+        margin-left: 1%;
+        height: 20vh;
+        justify-content: center;
+        color: var(--primary-color);
+        width: 50%;
+        margin-top: 5%;
+    }
+    .menuBox  button {
+        margin-bottom: 5%;
+    }
+    .intro-text {
+        width: 95%;
+    }
+    .intro-text> div:first-child{
+        width: 95%;
+    }
+}
