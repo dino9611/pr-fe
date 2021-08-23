@@ -7,6 +7,9 @@
     --primary-color: #322c78;
     --secondary-color: #ff7d6b;
 }
+button{
+    font-family: 'Poppins', sans-serif;
+}
 
 .maincontainer {
     padding: 0px 8%;
@@ -18,7 +21,6 @@
     justify-content: space-between;
     padding: 3% 0px;
     /* margin-top: 2%; */
-
 }
 
 .logo {
@@ -83,7 +85,7 @@
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,44,120,1) 35%, rgba(255,125,107,1) 100%);
     /* color: white; */
 }
-.menu:hover {
+.menu > div > div:hover {
     cursor: pointer;
     color: var(--secondary-color);
     opacity: 0.6;
@@ -100,6 +102,7 @@
     flex-direction: column;
     align-items: center;
     padding: 2% 0px;
+    
 }
 .intro-text {
     /* background-color: blanchedalmond; */
@@ -270,11 +273,56 @@
     border: 2px solid var(--secondary-color);
     border-radius: 10px;
 }
-
-
-
-
 /*!Jumbotron1 Finish */
+/*!Jumbotron2 Start */
+.jumbotron2 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* text-align: center; */
+}
+.logo2 {
+    /* background-color: maroon; */
+    display: flex;
+    justify-content:center;
+    /* align-items: center; */
+    margin-top: 1%;
+}
+.logo2 > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    /* background-color: darkolivegreen; */
+    font-size: 2em;
+}
+.jumbotron2 > div:first-child{
+    margin-top: 10%;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer > div:first-child {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-top: 5%;
+}
+.footer > div:last-child{
+    font-size: 0.8em;
+    margin-top: 1%;
+    color: var(--primary-color);
+}
+.corelogo > i:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+    
+}
+/*!Jumbotron2 Finish */
 
 
 @media only screen and (max-width: 768px){
@@ -311,10 +359,22 @@
         height: 20vh;
     }
     .menuBox  button {
-        font-size: 0.7rem;
+        font-size: 1rem;
         height: 4vh;
         border-radius: 20px;
+        width: 70%;
     }
+    /*!Jumbotron2 Start */
+.logo2 > div {
+    width: 80%;
+    /* background-color: darkolivegreen; */
+    font-size: 1.7em;
+}
+.jumbotron2 > div:first-child{
+    margin-left: 5%;
+    font-size: 1.2em;
+}
+/*!Jumbotron2 Finish */
 }
 
 @media only screen and (max-width: 600px){
@@ -354,6 +414,10 @@
     }
     .menuBox  button {
         margin-bottom: 5%;
+        font-size: 0.7rem;
+        height: 5vh;
+        border-radius: 20px;
+        width: 70%;
     }
     .intro-text {
         width: 95%;
@@ -361,4 +425,15 @@
     .intro-text> div:first-child{
         width: 95%;
     }
+     /*!Jumbotron2 Start */
+    .logo2 > div {
+        width: 100%;
+        /* background-color: darkolivegreen; */
+        font-size: 1.2em;
+    }
+    .jumbotron2 > div:first-child{
+        font-size: 1.2em;
+        margin-left: 3%;
+    }
+    /*!Jumbotron2 Finish */
 }
