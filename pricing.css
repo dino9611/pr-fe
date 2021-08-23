@@ -135,6 +135,7 @@
     animation: geser 1s;
     transform: translateX(100%);
 }
+
 .jumbotron1 .yearly {
     background-color: white;
     color: var(--primary-color);
