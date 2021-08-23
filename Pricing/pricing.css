@@ -1,0 +1,543 @@
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --text-color: #5a1fa3
+}
+.container {
+    padding: 0px 5%;
+    justify-content: center;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.blaze {
+    margin-top: 1%;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.menu-bars {
+    margin: 1%;
+    font-size: 1.25em;
+    display: none;
+}
+
+.linkmenu {
+    margin-top: 1%;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.signin {
+    width: 5%;
+    padding: .65%;
+    font-weight: 600;
+    border-radius: 70px;
+    border: 2px solid;
+    text-align: center;
+    transition: 300ms;
+}
+
+.signin:hover {
+    cursor: pointer;
+    color: cyan;
+    background-color: black;
+    border-color: cyan;
+}
+
+/* HEADER END */
+
+/* JUMBOTRON 1 */
+
+.jumbo1 {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.judul {
+    margin-left: 32.5%;
+    margin-right: 22.5%;
+    font-size: 3.5rem;
+    color: var(--text-color);
+}
+
+.text {
+    margin-top: 1%;
+    text-align: center;
+    opacity: .6;
+
+}
+
+.pos {
+    display: flex;
+    justify-content: center;
+}
+
+.discount {
+    background-color: #f5aeae;
+    margin-top: 3%;
+    text-align: center;
+    width: 7%;
+    padding: .65%;  
+    font-weight: 600;
+    border-radius: 70px;
+    border: 2px solid;
+    justify-content: center;
+    color: red;
+}
+
+.sliding {
+    display: flex;
+    margin-top: 2.5%;
+    justify-content: center;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    background-color: #edece8;
+    justify-content: space-between;
+    text-align: center;
+    padding: .25rem;
+    width: 20%;
+    border-radius: 30px;
+}
+
+input[type=radio] {
+    display: none ;
+}
+
+.tab {
+    background-color: #edece8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 45%;
+    height: 5vh;
+}
+
+input[type=radio]:checked+ .tab {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 45%;
+    height: 5vh;
+    color: red;
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5%;
+    opacity: .6;
+}
+
+/* JUMBOTRON 1 END */
+
+/* JUMBOTRON 2 */
+
+.jumbo2 {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+
+}
+
+.kiri {
+    margin-bottom: 5%;
+    width: 17.5%;
+    text-align: center;
+    color: var(--text-color);
+    box-shadow: -11px 10px 20px 0px rgba(128,123,123,0.75);
+    -webkit-box-shadow: -11px 10px 20px 0px rgba(128,123,123,0.75);
+    -moz-box-shadow: -11px 10px 20px 0px rgba(128,123,123,0.75);
+}
+
+.kiri:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(53deg, rgba(2,0,36,1) 0%, rgba(121,9,98,1) 39%, rgba(0,212,255,1) 100%);
+    color: white;
+}
+
+
+.tengah {
+    margin-bottom: 5%;
+    width: 17.5%;
+    padding: 0% 0% 3% 0%;
+    text-align: center;
+    color: var(--text-color);
+    box-shadow: -11px 10px 20px 0px rgba(128,123,123,0.75);
+    -webkit-box-shadow: -11px 10px 20px 0px rgba(128,123,123,0.75);
+    -moz-box-shadow: -11px 10px 20px 0px rgba(128,123,123,0.75);
+}
+
+.tengah:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(53deg, rgba(2,0,36,1) 0%, rgba(121,9,98,1) 39%, rgba(0,212,255,1) 100%);
+    color: white;
+}
+
+.kanan {
+    margin-bottom: 5%;
+    width: 17.5%;
+    padding: 0% 0% 3% 0%;
+    text-align: center;
+    color: var(--text-color);
+    box-shadow: -11px 10px 20px 0px rgba(128,123,123,0.75);
+    -webkit-box-shadow: -11px 10px 20px 0px rgba(128,123,123,0.75);
+    -moz-box-shadow: -11px 10px 20px 0px rgba(128,123,123,0.75);
+}
+
+.kanan:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(53deg, rgba(2,0,36,1) 0%, rgba(121,9,98,1) 39%, rgba(0,212,255,1) 100%);
+    color: white;
+}
+
+
+.title {
+    margin-top: 5%;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    margin-top: 10%;
+}
+
+.desc {
+    font-size: .75rem;
+    margin-top: 5%;
+}
+
+.button {
+    background-color: lightgray;
+    margin-top: 20%;
+    text-align: center;
+    width: 50%;
+    padding: 5%;  
+    font-weight: 600;
+    border-radius: 70px;
+    border: 2px solid;
+    justify-content: center;
+    color: red;
+}
+
+.button:hover {
+    background-color: red !important;
+    color: white !important;
+}
+
+/* JUMBOTRON 2 END*/
+
+/* JUMBOTRON 3*/
+
+.trust {
+    margin-left: 10%;
+    color: var(--text-color);
+    font-size: 1.25em;
+    font-weight: bold;
+
+}
+
+/* JUMBOTRON 3 END*/
+
+/* LOGO */
+
+.logo {
+    margin-left: 12.5%;
+    margin-top: 5%;
+    display: flex;
+
+}
+
+.pic-logo1 {
+    width: 20%;
+    height: auto;
+    opacity: .6;
+}
+
+.pic-logo1:hover {
+    width: 20%;
+    height: auto;
+    opacity: 1;
+}
+
+.pic-logo2 {
+    width: 20%;
+    height: auto;
+    opacity: .6;
+}
+
+.pic-logo2:hover {
+    width: 20%;
+    height: auto;
+    opacity: 1;
+}
+
+.pic-logo3 {
+    width: 20%;
+    height: auto;
+    opacity: .6;
+}
+
+.pic-logo3:hover {
+    width: 20%;
+    height: auto;
+    opacity: 1;
+}
+
+.pic-logo4 {
+    width: 20%;
+    height: auto;
+    opacity: .6;
+}
+
+.pic-logo4:hover {
+    width: 20%;
+    height: auto;
+    opacity: 1;
+}
+
+.pic-logo5 {
+    width: 20%;
+    height: auto;
+    opacity: .6;
+}
+
+.pic-logo5:hover {
+    width: 20%;
+    height: auto;
+    opacity: 1;
+}
+
+/* LOGO END */
+
+/* JUMBO 4 */
+
+.jumbo4 {
+    margin-top: 5%;
+    color: var(--text-color);
+    text-align: center;
+    
+}
+
+.feat {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.desc2 {
+    margin-top: 1.5%;
+    opacity: .6;
+}
+
+/* JUMBO 4 END*/
+
+/* for tablet */
+@media only screen and (max-width: 768px) {
+
+    /* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.blaze {
+    margin-top: 1%;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.linkmenu {
+    margin-top: 1%;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.signin {
+    width: 10%;
+}
+
+/* HEADER END */
+
+
+/* JUMBOTRON 1 */
+
+.jumbo1 {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.judul {
+    margin-left: 28%;
+    font-size: 2.5rem;
+}
+
+.discount {
+    width: 12%;
+    padding: 2%;  
+
+}
+
+/* JUMBOTRON 1 END */
+
+/* JUMBOTRON 2 */
+
+.title {
+    font-size: 1em;
+}
+
+.price {
+    font-size: 2.5em;
+
+}
+
+.desc {
+    font-size: .75rem;
+    margin-top: 5%;
+}
+
+.button {
+    width: 70%;
+    padding: 2.5%;
+    font-size: .75em;
+}
+
+
+/* JUMBOTRON 2 END*/
+
+
+}
+
+/* for mobile */
+@media only screen and (max-width: 600px) {
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.blaze {
+    margin-top: 1%;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.menu-bars {
+    margin: 1%;
+    font-size: 1.25em;
+    display: block;
+}
+
+.linkmenu {
+    display: none;
+}
+
+.signin {
+    display: none;
+
+}
+
+/* HEADER END */
+
+
+/* JUMBOTRON 1 */
+
+.judul {
+    margin-left: 16%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+}
+
+.discount {
+    width: 27%;
+    padding: 1.5%;  
+    font-weight: 500;
+
+}
+
+.tabs {
+    padding: .25rem;
+    width: 30%;
+}
+
+.tab {
+    padding: .20em;
+}
+
+input[type=radio]:checked+ .tab {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 45%;
+    height: 5vh;
+    color: red;
+}
+
+.terms {
+    font-size: .75em;
+}
+
+/* JUMBOTRON 1 END */
+
+
+/* JUMBOTRON 2 */
+
+.title {
+    font-size: .8em;
+}
+
+.price {
+    font-size: 2em;
+
+}
+
+.desc {
+    font-size: .5rem;
+    margin-top: 5%;
+}
+
+.button {
+    width: 70%;
+    padding: 2.5%;
+    font-size: .5em;
+}
+
+
+/* JUMBOTRON 2 END*/
+
+}
