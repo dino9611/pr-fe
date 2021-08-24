@@ -79,7 +79,16 @@
     cursor: pointer;
     color: var(--primary-color);
     opacity: 0.6;
-}  
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+a > div:hover {
+    color: #f1b505;
+}
 /* CSS Header End Here */
   
 
@@ -167,7 +176,7 @@
 
 .sponsored > div {
     margin-right: auto;
-    font-weight: 600;
+    font-size: 60px;
     display: flex;
     padding: 3%;
     width: 100%;
@@ -268,7 +277,7 @@
 .freeTrial p {
     color: var(--text-secondary);
     font-size: 1em;
-    width: 70%;
+    width: 80%;
     font-weight: 600;
 }
 
@@ -278,8 +287,8 @@
 
 .clickButton2 {
     padding: 5%;
-    margin: 7%;
-    width: 40%;
+    margin: 7% 7% 7% 30%;
+    width: 50%;
     text-align: center;
     border-radius: 80px;
     border-color: transparent;
@@ -529,6 +538,7 @@
 
     .clickButton2 {
         width: 90%;
+        margin-left: 10%;
     }
     /* Free Trial */
 
@@ -572,20 +582,11 @@
 
     /* Sponsored */
     .sponsored {
-        margin-top: 5%;
-        width: 95%;
-        flex-direction: column;
+       margin-top: 8%;
     }
-
+    
     .sponsored > div {
-        flex-wrap: wrap;
-        margin-bottom: 10%;
-    }
-
-    .sponsored > div > div {
-        width: 50%;
-        padding: 3% 0px;
-        text-align: center;
+        font-size: 20px;
     }
     /* Sponsored */
 
@@ -606,6 +607,12 @@
         margin-top: 6% !important;
     }
     /* Jumbotron 3 */
+
+    /* Jumbotron 4 */
+    .jumbotron4 p {
+        font-size: 1em;
+    }
+    /* Jumbotron 4 */
 
     /* Free Trail */
     .freeTrial > div{
