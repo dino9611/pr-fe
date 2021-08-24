@@ -1,0 +1,298 @@
+/* font-family: 'Lato', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --primary-color: #f1b505;
+  --text-color: #1d1d1d;
+  --text-secondary: #adadad;
+}
+
+.container {
+    margin: 2% 10%;
+}
+
+/* Header Awal */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0%;
+    margin-bottom: 8vh;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+span {
+    background-color: var(--primary-color);
+}
+
+.iconbar {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+}
+
+.menu > .menu2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    width: 75%;
+}
+
+.menu > .menu2 > div {
+    transition: 200ms;
+}
+
+.menu > .menu2 > div:hover {
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.login {    
+    width: 15%;
+    text-align: center;
+    padding: 3% 1.5%;
+    border-radius: 40px;
+    border: 2px solid var(--primary-color);
+    transition: 300ms;
+}
+
+.login:hover {
+    background-color: var(--primary-color);
+}
+/* Header Akhir */
+
+/* Jumbotron 1 Awal*/
+.jumbotron1 {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    margin-bottom: 8vh;
+    align-items: center;
+}
+.jumbotron1 > h1 {
+    margin: 0 auto;
+    width: 35%;
+    margin-bottom: 3vh;
+    font-size: 3em;
+    color: #f1b505;
+    text-align: center;
+}
+.jumbotron1 > .p1 {
+    margin-bottom: 5vh;
+    color: #adadad;
+    text-align: center;
+}
+.jumbotron1 > .discount {
+    background-color: #f1b60549;
+    width: 8%;
+    padding: 0.7%;
+    margin: 0 auto;
+    border-radius: 40px;
+    color: #f1b505;
+    font-weight: 700;
+    margin-bottom: 4vh;
+    text-align: center;
+}
+.jumbotron1 > .plan-choice {
+    background-color: rgb(235, 233, 233);
+    display: flex;
+    width: 20%;
+    margin: 0 auto;
+    padding: 0.3%;
+    border-radius: 40px;
+    margin-bottom: 4vh;
+    text-align: center;
+}
+.jumbotron1 .yearly {
+    background-color: white;
+    padding: 5% 0;
+    flex-basis: 50%;
+    border-radius: 40px;
+    color: var(--primary-color);
+    font-weight: 600;
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.2);
+}
+.jumbotron1 .monthly {
+    padding: 5% 0;
+    flex-basis: 50%;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.jumbotron1 > .p2 {
+    color: var(--text-secondary);
+}
+/* Jumbotron 1 Akhir */
+
+/* Jumbotron 2 Awal */
+.jumbotron2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 15%;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.1);
+    margin-bottom: 8vh;
+}
+.jumbotron2 > div {
+    padding: 7vh 0;
+}
+.jumbotron2 > .free {
+    flex-basis: 33.3%;
+    text-align: center;
+}
+.marginbawah {
+    margin-bottom: 3vh;
+}
+.warna {
+    color: var(--primary-color);
+}
+.warnasekunder {
+    color: var(--text-secondary);
+}
+.buttonstyle {
+    padding: 5%;
+    border-radius: 30px;
+    border: none;
+}
+.buttoncolor1 {
+    background-color: #f1b60549;
+    color: var(--primary-color);
+    transition: 200ms;
+}
+.buttoncolor1:hover {
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+}
+.buttoncolor2 {
+    background-color: rgb(255, 150, 80);
+    color: white;
+    transition: 200ms;
+}
+.buttoncolor2:hover {
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+}
+.jumbotron2 > .premium {
+    flex-basis: 33.4%;
+    text-align: center;
+    background: #ffe259;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.jumbotron2 > .enterprise {
+    flex-basis: 33.3%;
+    text-align: center;
+}
+/* jumbotron 2 akhir */
+
+/* jumbotron 3 awal */
+.jumbotron3 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8vh;
+}
+.jumbotron3 > h1 {
+    margin-bottom: 5vh;
+    color: #f1b505  ;
+}
+.jumbotron3 > .brands {
+    text-align: center;
+    font-size: 3em;
+    color: #adadad;
+}
+.jumbotron3 > .brands > i {
+    width: 15%;
+    transition: 200ms;
+}
+.jumbotron3 > .brands > i:hover {
+    color: #1d1d1d;
+}
+
+@media only screen and (max-width: 480px) {
+    .iconbar {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .login {
+        display: none;
+    }
+
+    /* Jumbotron 1 */
+    .jumbotron1 > h1 {
+        width: 70%;
+        font-size: 2em;
+    }
+    .jumbotron1 > .p1 {
+        width: 60%;
+        align-items: center;
+    }
+    .jumbotron1 > .discount {
+        width: 15%;
+        padding: 2%;
+        font-size: 0.6em;
+    }
+    .jumbotron1 > .plan-choice {
+        width: 50%;
+        font-size: 0.8em;
+    }
+    /* Jumbotron 1 Akhir */
+
+    /* Jumbotron 2 */
+    .jumbotron2 {
+        flex-direction: column;
+    }
+    /* jumbotron 2 akhir */
+
+    /* jumbotron 3 */
+    .jumbotron3 > h1 {
+        text-align: center;
+        margin-bottom: 3vh;
+    }
+    .jumbotron3 > .brands {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* header */
+    .logo {
+        flex-basis: 40%;
+    }
+    .menu {
+        flex-basis: 60%;
+    }
+
+    /* jumbotron 1 */
+    .jumbotron1 > h1 {
+        width: 60%;
+    }
+    .jumbotron1 > .discount {
+        width: 13%;
+        padding: 1%;
+    }
+    .jumbotron1 > .plan-choice {
+        width: 50%;
+    }
+}
+
