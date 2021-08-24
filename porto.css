@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+ 
+ .container{
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .top {
+     display: flex;
+     flex-direction: column;
+     width: 12,5%;
+     height: 10px;
+ }
+
+.color-1, .color-5{
+    background-color: lightgoldenrodyellow;
+}
+.color-2, .color-6{
+    background-color: blue;
+}
+.color-3, .color-7{
+    background-color: darkblue;
+}
+.color-4, .color-8{
+    background-color: pink;
+}
+
+.header{
+    flex-direction: row;
+
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu > h2:last-child{
+    background-color: yellow;
+}
