@@ -23,6 +23,8 @@
   height: 13vh;
   justify-content: space-between;
   align-items: center;
+  /* position: fixed; */
+  /* top: 0; */
 }
 
 .nav {
@@ -34,19 +36,24 @@
 
 .logo {
   font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 .logo span {
   background-color: var(--main-color);
 }
 
-.nav > div {
+.nav > div,
+.nav > a {
   /* background-color: chocolate; */
   font-size: 0.7em;
   font-weight: 600;
   color: var(--color-font-small);
   cursor: pointer;
   transition: all 0.5s;
+  text-decoration: none;
 }
 
 .nav .log-in {
@@ -58,7 +65,8 @@
   color: #1c1c1c;
 }
 
-.nav > div:hover {
+.nav > div:hover,
+.nav > a:hover {
   color: var(--main-color);
 }
 
