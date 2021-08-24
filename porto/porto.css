@@ -25,8 +25,13 @@
 }
 
 .logo {
+    text-decoration: none;
+    color: black;
     font-size: 1.5em;
     font-weight: 700;
+}
+span {
+    background-color: var(--primary-color);
 }
 
 .iconbar {
@@ -46,11 +51,13 @@
     width: 75%;
 }
 
-.menu > .menu2 > div {
+.menu > .menu2 > a {
+    color: black;
+    text-decoration: none;
     transition: 200ms;
 }
 
-.menu > .menu2 > div:hover {
+.menu > .menu2 > a:hover {
     color: var(--text-secondary);
     cursor: pointer;
 }
@@ -74,6 +81,7 @@
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5%;
 }
 
 .jum1-sec1 {
@@ -134,12 +142,25 @@
 }
 /* jumbotron 1 akhir */
 
+/* brands */
+.brands {
+    text-align: center;
+    font-size: 4em;
+    color: #adadad;
+}
+.brands i {
+    width: 15%;
+    transition: 200ms;
+}
+.brands i:hover {
+    color: var(--text-color);
+}
 
 /* jumbotron 2 */
 .jumbotron2 {
     display: flex;
     justify-content: space-between;
-    margin-top: 13%;
+    margin-top: 10%;
 }
 
 .jumbotron2 > .jum2-sec1 {
@@ -404,7 +425,7 @@
         display: none;
     }
 
-
+    
     /* jumbotron 1 */
     .jumbotron1 {
         flex-direction: column;
@@ -420,8 +441,26 @@
         max-width: 90%;
         margin-bottom: 5vh;
     }
+    .subs {
+        display: flex;
+        flex-direction: column;
+    }
+    .input-email {
+        width: 100%;
+        max-width: 91%;
+        margin-bottom: 2vh;
+    }
     .button-sub {
         font-size: 0.7em;
+        width: 100%;
+    }
+
+    /* brands */
+    .brands {
+        font-size: 2em;
+    }
+    .brands i {
+        width: 18%;
     }
     
     /* jumbotron 2 */
@@ -440,6 +479,7 @@
     }
     .jum2-sec2 button {
         font-size: 00.7em;
+        width: 100%;
     }
 
     /* jumbotron 3 */
@@ -456,24 +496,30 @@
     }
     .jum3-sec1 button {
         font-size: 0.7em;
+        width: 100%;
     }
     .jum3-sec2 {
         order: -1;
     }
 
     /* jumbotron 4 */
+    .jumbotron4 {
+        display: flex;
+        flex-direction: column;
+    }
     .jum4-sec1 h1 {
         font-size: 1em;
     }
     .jum4-sec1 p {
         font-size: 0.7em;
         max-width: 90%;
+        margin-bottom: 2vh;
     }
     .jum4-sec2 button {
-        margin-top: 14%;
         padding: 3% 0%;
         width: 70%;
         font-size: 0.7em;
+        width: 100%;
     }
 
     /* jumbotron 5 */
@@ -525,5 +571,69 @@
     }
     .social p {
         font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* header */
+    .logo {
+        flex-basis: 40%;
+    }
+    .menu {
+        flex-basis: 60%;
+    }
+
+    /* jumbotron 1 */
+    .jumbotron1 {
+        margin-bottom: 5vh;
+    }
+    .jum1-sec1 p {
+        margin-bottom: 3vh;
+    }
+    .subs {
+        display: flex;
+        flex-direction: column;
+    }
+    .subs >.input-email {
+        width: 80%;
+        margin-bottom: 3%;
+    }
+    .subs > .button-sub {
+        width: 89%;
+    }
+
+    /* brands */
+    .brands {
+        font-size: 3em;
+    }
+    .brands i {
+        width: 18%;
+    }
+
+    /* jumbotron 2 */
+    .jumbotron2 p {
+        margin-bottom: 3vh;
+    }
+    .jumbotron2 button {
+        width: 100%;
+    }
+
+    /* jumbotron 3 */
+    .jumbotron3 p {
+        margin-bottom: 3vh;
+        max-width: 80%;
+    }
+    .jumbotron3 button {
+        width: 100%;
+    }
+
+    /* jumbotron 4 */
+    .jumbotron4 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .jumbotron4 button {
+        width: 100%;
     }
 }
