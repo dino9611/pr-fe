@@ -1,7 +1,5 @@
 # PR-bitco
 
-Untuk toggle menu nya masih belum & code di css nya blm refactor jd msh panjang bgt.
-
-Yang Blaze menyusul.
+Toggle button save 20% & asset arrow nya belum.
 
 Monggo feedbacknya. Terima kasih.
