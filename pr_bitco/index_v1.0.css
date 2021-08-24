@@ -23,6 +23,10 @@ body {
     margin: 0 5%;
 }
 
+.co-orange {
+    background-color: var(--primary-color);
+}
+
 .to-top-button {
     background: var(--primary-color);
     border-radius: 100px;;
@@ -64,12 +68,18 @@ body {
     width: 460px;
 }
 
+.nav-items a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
 .nav-items li {
     display: inline-block;
     margin: 0 5.5%;
 }
 
-.nav-items li:hover {
+.nav-items li:hover,
+.nav-items li a:hover {
     cursor: pointer;
     color: var(--primary-color);
     transition: 300ms;
