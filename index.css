@@ -16,11 +16,16 @@
 
 /* header start */
 .header {
-    /* background-color: tan; */
+    background-color: whitesmoke;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
     display: flex;
     color: var(--text-color);
     justify-content: space-between;
-    padding: 2% 0px;
+    padding: 1% 9%;
 }
 
 .bitco {
@@ -82,7 +87,7 @@
 .jumbotron1 {
     /* background-color: burlywood; */
     display: flex;
-    margin-top: 4%;
+    margin-top: 10%;
 }
 
 .jumbotron1 > div {
@@ -95,6 +100,7 @@
     font-weight: 600;
     color: var(--text-color);
     margin: 5% 0px;
+    margin-top: 20%;
 }
 
 .jumbotron1 p {
@@ -105,7 +111,7 @@
 }
 
 .menu2 {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .input-text {
@@ -390,6 +396,16 @@
 /* jumbotron4 finish */
 
 /* footer start */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.footerText > h3 {
+    margin-bottom: 20px;
+}
 /* footer finish */
 
 /* FOR TABLET */
@@ -404,7 +420,7 @@
     }
 
     .main-container {
-        padding: 0px 3%;
+        padding: 0px 6%;
     }
 
     .signIn {
@@ -414,6 +430,14 @@
     }
 
     /* jumbotron1 */
+    .jumbotron1 {
+        padding-top: 15px;
+    }
+
+    .gambar1 {
+        padding-top: 15%;
+    }
+
     .hurufGede1 {
         font-size: 2.6em;
     }
@@ -513,6 +537,9 @@
     }
 
     /* footer */
+    .footer {
+        font-size: 2vh;
+    }
 }
 
 /* FOR MOBILE */
@@ -537,7 +564,14 @@
     }
     
     .gambar1 {
-        height: 30vh;
+        height: 45vh;
+        padding-top: 10%;
+    }
+
+    .hurufGede1 {
+        margin: 0%;
+        margin-top: 3%;
+        margin-bottom: 5%;
     }
 
     /* sponsor */
@@ -600,5 +634,8 @@
     }
 
     /* footer */
+    .footer {
+        font-size: 1.5vh;
+        margin-top: 15%;
+    }
 }
-
