@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="./bootstrap-5.1.0-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- css below bootstrap -->
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/164620f033.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>The Culture Trip</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar1 fixed-el">
+      <div class="main-logo">
+        <a href="#">
+          <img src="./assets/culture_trip.png" alt="" />
+        </a>
+      </div>
+      <div class="sidebar">
+        <div onclick="search()">
+          <i class="fas fa-search fa-lg"></i>
+        </div>
+        <div onclick="hamburgerMenu()">
+          <i class="fas fa-bars fa-lg"></i>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar1 fixed-el container">
+      <div class="d-flex">
+        <span class="badge rounded-pill">Places To Stay</span>
+        <span class="badge rounded-pill">Experiences</span>
+        <span class="badge rounded-pill">Trips</span>
+      </div>
+    </nav>
+
+    <div class="navbar1 fixed-el"></div>
+    <!-- navbar END -->
+
+    <div class="hero" style="max-height: 20vh">
+      <img src="./assets/greece-halki.jpg" style="width: 1350px" alt="halki" />
+      <h1 style="position: relative; top: 160px">BOOK HAND-PICKED</h1>
+      <h1 style="position: relative; top: 160px">STAYS AND EXPERIENCES</h1>
+    </div>
+
+    <div class="filler" style="height: 800px"></div>
+
+    <div class="containerA container">
+      <div class="row justify-content-sm-between">
+        <!-- row -->
+        <h5 class="col-12">Summer's Not Over Yet</h5>
+        <p class="col-12">
+          We've got the best bookings for your late sunshie getaway
+        </p>
+
+        <div class="col-6 col-md-4 col-lg-3 p-0">
+          <div
+            class="image-wrapper"
+            style="background-image: url(./assets/TheTime_NewYork.jpg)"
+          ></div>
+          <p>
+            <span
+              style="color: rgb(68, 68, 68); font-weight: 600; font-size: 13px"
+              >PLACETOSTAY . NEW YORK</span
+            >
+            <br />
+            The Time New York <br />
+            <span style="color: blue">4.5/5</span>
+            <span style="color: grey; font-weight: 100">(120 reviews)</span>
+          </p>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 p-0">
+          <div
+            class="image-wrapper"
+            style="background-image: url(./assets/thebeverlyhotel.jpg)"
+          ></div>
+          <p>
+            <span
+              style="color: rgb(68, 68, 68); font-weight: 600; font-size: 13px"
+              >PLACETOSTAY . LOS ANGELES</span
+            >
+            <br />
+            The Beverly Hotel<br />
+            <span style="color: blue">4.8/5</span>
+            <span style="color: grey; font-weight: 100">(1000 reviews)</span>
+          </p>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 p-0">
+          <div
+            class="image-wrapper"
+            style="background-image: url(./assets/thebrooklyn.jpg)"
+          ></div>
+          <p>
+            <span
+              style="color: rgb(68, 68, 68); font-weight: 600; font-size: 13px"
+              >PLACETOSTAY . BROOKLYN</span
+            >
+            <br />
+            The Brooklyn<br />
+            <span style="color: blue">4.2/5</span>
+            <span style="color: grey; font-weight: 100">(100 reviews)</span>
+          </p>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 p-0">
+          <div
+            class="image-wrapper col-6 col-sm-4"
+            style="background-image: url(./assets/HotelAnticoDoge.jpg)"
+          ></div>
+          <p>
+            <span
+              style="color: rgb(68, 68, 68); font-weight: 600; font-size: 13px"
+              >PLACETOSTAY</span
+            >
+            <br />
+            Hotel Antico Doge<br />
+            <span style="color: blue">4.3/5</span>
+            <span style="color: grey; font-weight: 100">(18 reviews)</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="containerB container">
+      <div class="row justify-content-sm-between">
+        <!-- row -->
+        <h5 class="col-12">Great British Gateways</h5>
+        <p class="col-12 description">
+          Fully vaccinated? Double-jabbed travelers from the US can now explore
+          the UK without quarantining
+        </p>
+
+        <div class="col-6 col-md-4 col-lg-3 p-0">
+          <div
+            class="image-wrapper"
+            style="background-image: url(./assets/music.jpg)"
+          ></div>
+          <p>
+            <span
+              style="color: rgb(68, 68, 68); font-weight: 600; font-size: 13px"
+              >MUSIC</span
+            >
+            <br />
+            Beatles and Britpop: A Backstage Music
+          </p>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 p-0">
+          <div
+            class="image-wrapper"
+            style="background-image: url(./assets/placetostay.jpg)"
+          ></div>
+          <p>
+            <span
+              style="color: rgb(68, 68, 68); font-weight: 600; font-size: 13px"
+              >PLACE TO STAY</span
+            >
+            <br />
+            The 10 Most Romantic Hotels in London
+          </p>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 p-0">
+          <div
+            class="image-wrapper"
+            style="background-image: url(./assets/seeanddo.jpg)"
+          ></div>
+          <p>
+            <span
+              style="color: rgb(68, 68, 68); font-weight: 600; font-size: 13px"
+              >SEE & DO</span
+            >
+            <br />
+            20 Must-Visit Attractions in Edinbrugh
+          </p>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 p-0">
+          <div
+            class="image-wrapper col-6 col-sm-4"
+            style="background-image: url(./assets/placetostay2.jpg)"
+          ></div>
+          <p>
+            <span
+              style="color: rgb(68, 68, 68); font-weight: 600; font-size: 13px"
+              >PLACE TO STAY</span
+            >
+            <br />
+            The 10 Best Luxury Hotels in Edinbrugh
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLORE CITIES -->
+    <!-- Carousel Button -->
+    <div class="container">
+        <h5 class="col-12">Explore Cities</h5>
+        <p class="col-12 description p-0 m-0">Read our insider travel guides to the world's most exciting places.</p>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-between">
+        <div
+          onclick="carouselLeft()"
+          class="image-wrapper carouselButton"
+          style="
+            background-image: url(./assets/left-arrow-svgrepo-com.svg);
+            width: 50px;
+            position: relative;
+            height: 50px;
+            top: 40px;
+          "
+        ></div>
+        <div class="" style="width: 100px; height: 100px; opacity: 0"></div>
+        <div
+          onclick="carouselRight()"
+          class="image-wrapper carouselButton"
+          style="
+            background-image: url(./assets/right-arrow-svgrepo-com.svg);
+            width: 50px;
+            position: relative;
+            height: 50px;
+            top: 40px;
+          "
+        ></div>
+      </div>
+    </div>
+    <!-- Carousel wrapper -->
+    <div>
+      <div class="containerC d-flex">
+        <!-- start -->
+        <div>
+    <div class="containerB container">
+      <div class="row justify-content-sm-between">
+        <!-- row -->
+
+        <div class="col-6 col-md-4 col-lg-3 p-0">
+          <div
+            class="image-wrapper"
+            style="background-image: url(./assets/venice.jpg)"
+          ></div>
+          <p>Venice</p>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 p-0">
+          <div
+            class="image-wrapper"
+            style="background-image: url(./assets/paris.jpg)"
+          ></div>
+          <p>Paris</p>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 p-0">
+          <div
+            class="image-wrapper"
+            style="background-image: url(./assets/milan.jpg)"
+          ></div>
+          <p>Milan</p>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 p-0">
+          <div
+            class="image-wrapper col-6 col-sm-4"
+            style="background-image: url(./assets/barcelona.jpg)"
+          ></div>
+          <p>Barcelona</p>
+        </div>
+      </div>
+    </div>
+        </div>
+
+        <!-- next -->
+        <div></div>
+
+        <!-- next -->
+        <div></div>
+          <!-- end -->
+        </div>
+      </div>
+    </div>
+    <!-- Carousel wrapper -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

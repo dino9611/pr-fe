@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* body {
+  display: block;
+  margin: 8px;
+} */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+:root {
+  --navbar-color: 255, 255, 255;
+}
+
+/* navbar */
+.fixed-el {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+/* logo, search and hamburger menu */
+.navbar1:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.navbar1:nth-child(1) .sidebar {
+  flex-basis: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar1:nth-child(1) .sidebar > div,
+.navbar1:nth-child(1) .main-logo {
+  cursor: pointer;
+}
+.navbar1:nth-child(1) .main-logo img {
+  width: 200px;
+}
+/* links, slide, scale, and fade */
+.navbar1:nth-child(2) {
+  transition: 0.4s;
+}
+.navbar1:nth-child(2) div {
+  justify-content: center;
+  margin: 5px;
+}
+.navbar1:nth-child(2) > div {
+  width: 100vw;
+  height: 50px !important;
+}
+.navbar1:nth-child(2) .rounded-pill {
+  /* background-color: rgba(137, 255, 99, 1); */
+  cursor: pointer;
+  margin: 5px;
+  width: 150px;
+  padding-top: 16px;
+  height: 100%;
+  transition: 0.4s;
+  /* border: solid 1px black; */
+
+  font-size: small;
+  color: black;
+  font-weight: 700;
+  letter-spacing: normal;
+  font-family: ProximaNova-Bold, Helvetica, Arial, sans-serif;
+}
+.navbar1:nth-child(2) .rounded-pill:nth-child(1) {
+  background-color: rgba(137, 255, 99, 1);
+}
+/* white block, fade */
+.navbar1:nth-child(3) {
+  background-color: white;
+  z-index: 99;
+  height: 150px;
+  opacity: 0;
+  transition: 0.4s;
+}
+/* navbar END*/
+
+/* hero */
+.hero {
+  position: absolute;
+  width: 100%;
+  margin-bottom: 1000px;
+}
+/* always center */
+.hero img {
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  z-index: 1;
+  /* max-width: 1400px; */
+}
+.hero h1 {
+  z-index: 2;
+  color: white;
+  margin: 0 0 0 50px;
+}
+h1 {
+  /* color: white; */
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-family: ProximaNova-Semibold, helvetica, Arial, sans-serif;
+  word-spacing: 100vw;
+  font-size: 50px;
+  line-height: 38px;
+  text-shadow: 2px 2px #000;
+}
+/* hero END */
+
+/* CONTAINER A and B */
+.containerA {
+  margin-bottom: 50px;
+}
+.containerA p {
+  font-weight: 600;
+}
+
+.containerB {
+  margin-bottom: 50px;
+}
+.containerB p:not(.description) {
+  font-weight: 600;
+  font-size: 14px;
+}
+.image-wrapper {
+  /* background-image: url('http://techmadeplain.com/img/2014/300x200.png'); */
+  /* aspect ratio of thumbnail pic is 3:2 */
+  /* width: 249px; */
+  width: 241px;
+  height: 161px;
+  background-size: 100%;
+  /* background-size: cover; */
+  background-position: center center;
+  transition: 0.3s ease-in-out;
+}
+.image-wrapper:hover {
+  background-size: 110%;
+}
+/* CONTAINER A and B END */
+
+/* CAROUSEL */
+.containerC {
+  position: absolute;
+  height: 200px;
+  width: 300vw;
+  transition: 1s;
+  /* transform: translateX(-100vw); */
+}
+.containerC > div {
+  /* background-color: black; */
+  width: 100vw;
+  margin: 0 5% 0 5%;
+}
+.containerC .image-wrapper {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+/* .thumbnail {
+  display: inline-block !important;
+  overflow: hidden !important;
+}
+.thumbnail img {
+  padding: 0 !important;
+  width: 200px !important;
+  display: block !important;
+  transition: transform 0.4s !important;
+  transition-timing-function: ease-out !important;
+}
+.thumbnail:hover img {
+  transform: scale(1.1) !important;
+  transform-origin: 50% 50% !important;
+} */
+
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .navbar1:nth-child(2) .rounded-pill {
+    transform: translateY(130%);
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+}
