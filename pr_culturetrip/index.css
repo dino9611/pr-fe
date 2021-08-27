@@ -1,9 +1,39 @@
+/* GENERAL & CUSTOM PRESET SECTION */
 body {
     font-family: "Roboto", helvetica, Arial, sans-serif;
 }
 
+:root {
+    --primary-color: white;
+    --secondary-color: rgb(18, 20, 22);
+    --third-color: #66717c;
+    --brand-1st-color: #88fe63;
+    --brand-2nd-color: #ECFDE3;
+    --rating-color: #00769a;
+}
+
+.text-1st-color {
+    color: var(--secondary-color);
+}
+
+.text-3rd-color {
+    color: var(--third-color);
+}
+
+.text-rate-color {
+    color: var(--rating-color);
+}
+
 .semi-bold {
     font-weight: 500;
+}
+
+.mid-bold {
+    font-weight: 600;
+}
+
+.font-fewplus {
+    font-size: 1.1em;
 }
 
 .flex-center {
@@ -12,40 +42,16 @@ body {
     justify-content: center;
 }
 
-/* HERO BACKGROUND IMAGE SECTION */
-.hero-img-container {
-    height: 80vh;
-    position: absolute;
-    width: 100%;
-    z-index: -100;
-}
-
-.hero-img-container > img {
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-    width: 100%;
-}
-
-.hero-title-container {
-    color: white;
-    margin-top: 40vh;
-    padding: 40px 40px 20px 80px;
-    position: absolute;
-    min-width: 700px;
-    width: 40%;
-}
-
-.hero-title-container > h1 {
-    margin-top: -1%;
-    font-size: 5em;
-    font-weight: 600;
-    line-height: 0.8;
-}
-
-
-
 /* NAVIGATION BAR SECTION */
+.custom-nav-fix {
+    background-color: rgba(255, 255, 255, 0.95);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
 .custom-nav-btn {
     background: transparent;
     border-radius: 100px;
@@ -56,26 +62,16 @@ body {
 }
 
 .custom-nav-btn:hover {
-    background: #ECFDE3;
+    background: var(--brand-2nd-color);
 }
 
 .custom-active {
-    background: #88fe63 !important;
+    background: var(--brand-1st-color) !important;
 }
 
 .nav-icon-size {
     cursor: pointer;
     font-size: 1.3em;
-}
-
-.vertical-line {
-    background: rgb(18, 20, 22);
-    height: 26px;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    width: 1px;
-    z-index: 99;
 }
 
 /* SEARCH ON NAVIGATION BAR SECTION */
@@ -109,7 +105,7 @@ body {
 }
 
 .icon-search-position {
-    background-color: rgb(18, 20, 22);
+    background-color: var(--secondary-color);
     border-radius: 100px;
     color: white;
     font-size: 0.8em;
@@ -120,7 +116,7 @@ body {
 
 .custom-search-wrapper:first-child > input {
     background: white;
-    border: 1px solid rgb(18, 20, 22);
+    border: 1px solid var(--secondary-color);
     border-right: transparent;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
@@ -132,10 +128,10 @@ body {
 
 .custom-search-wrapper:nth-child(2) > input {
     background: white;
-    border-bottom: 1px solid rgb(18, 20, 22);
+    border-bottom: 1px solid var(--secondary-color);
     border-left: transparent;
     border-right: transparent;
-    border-top: 1px solid rgb(18, 20, 22);
+    border-top: 1px solid var(--secondary-color);
     height: 46px;
     min-width: 200px;
     padding-left: 35px;
@@ -144,10 +140,10 @@ body {
 
 .custom-search-wrapper:nth-child(3) > input {
     background: white;
-    border-bottom: 1px solid rgb(18, 20, 22);
+    border-bottom: 1px solid var(--secondary-color);
     border-left: transparent;
     border-right: transparent;
-    border-top: 1px solid rgb(18, 20, 22);
+    border-top: 1px solid var(--secondary-color);
     height: 46px;
     min-width: 250px;
     padding-left: 35px;
@@ -156,7 +152,7 @@ body {
 
 .custom-search-wrapper:nth-child(4) > input {
     background: white;
-    border: 1px solid rgb(18, 20, 22);
+    border: 1px solid var(--secondary-color);
     border-left: transparent;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
@@ -166,8 +162,8 @@ body {
     width: 350px;
 }
 
-.custom-search-wrapper > .vertical-line {
-    background: rgb(18, 20, 22);
+.vertical-line {
+    background: var(--secondary-color);
     height: 26px;
     margin-left: -1px;
     position: absolute;
@@ -181,4 +177,184 @@ body {
 
 .custom-search-wrapper > input:focus {
     outline: 0;
+}
+
+/* HERO BACKGROUND IMAGE SECTION */
+.hero-img-container {
+    height: 80vh;
+    top: 0;
+    width: 100%;
+    z-index: -100;
+}
+
+.hero-img-container > img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.hero-title-container {
+    color: white;
+    margin-top: 40vh;
+    min-width: 700px;
+    padding: 40px 40px 20px 80px;
+    position: absolute;
+    top: 0;
+    width: 40%;
+}
+
+.hero-title-container > h1 {
+    margin-top: -1%;
+    font-size: 5em;
+    font-weight: 600;
+    line-height: 0.8;
+}
+
+/* HOTEL CARDS SECTION */
+#hotel-cards {
+    /* background-color: bisque; */
+    height: 100vh;
+    padding-top: 10%;
+}
+
+.hotel-item {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    margin: 0 16px;
+    overflow: hidden;
+    width: 246px;
+}
+
+.fbasis-100 {
+    flex-basis: 100%;
+}
+
+.hotel-item > p {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding-top: 2px;
+}
+
+/* .overflow-wrapper {
+    height: 50%;
+    overflow: hidden;
+} */
+
+.hotel-item img {
+    transition: .3s;
+}
+
+.hotel-item img:hover {
+    transform: scale(1.05);
+}
+
+.hotel-item > p:nth-child(3) {
+    font-size: 14px;
+}
+
+.icon-card-position {
+    background-color: var(--primary-color);
+    border-radius: 100px;
+    cursor: pointer;
+    color: var(--secondary-color);
+    font-size: 1.2em;
+    margin: 8px 8px 0 200px;
+    padding: 10px 12px;
+    position: absolute;
+}
+
+.hotel-item .icon-card-position:hover {
+    color: var(--third-color);
+}
+
+/* TESTING */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+/* END OF TESTING */
+
+/* EXPLORE CITIES SECTION */
+#explore-cities {
+    background-color: bisque;
+    height: 100vh;
+    padding-top: 10%;
+}
+
+.explore-item {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 154px;
+    margin: 0 16px;
+    width: 154px;
+}
+
+.explore-overflow {
+    height: 70%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.explore-overflow img {
+    transition: 0.3s;
+    width: 100%;
+}
+
+.explore-overflow img:hover {
+    transform: scale(1.1);
+}
+
+/* CAMPAIGN BANNER SECTION */
+
+#campaign-banner {
+    background-color: var(--brand-1st-color);
+}
+
+/* #campaign-banner:first-child {
+    display: inline-block;
+    flex-basis: 33.33%;
+}
+
+#campaign-banner:nth-child(2) {
+    display: inline-block;
+    flex-basis: 33.33%;
+}
+
+#campaign-banner:last-child {
+    display: inline-block;
+    flex-basis: 33.33%;
+} */
+
+/* BEST OF CULTURE TRIP SECTION */
+#best-of-cards img {
+    width: 50%;
+}
+
+/* FOOTER SECTION */
+footer {
+    background-color: var(--secondary-color);
+    height: 200px;
 }
