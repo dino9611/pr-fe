@@ -1,0 +1,248 @@
+body {
+    font-family: "Roboto", helvetica, Arial, sans-serif;
+}
+
+.semi-bold {
+    font-weight: 500;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-background-img {
+    position: absolute;
+    height: 446px;
+    width: 100%;
+    z-index: -100;
+}
+
+/* NAVIGATION BAR SECTION */
+.custom-nav-btn {
+    background: transparent;
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 12px 0;
+    width: 183px;
+}
+
+.custom-nav-btn:hover {
+    background: #ECFDE3;
+}
+
+.custom-active {
+    background: #88fe63 !important;
+}
+
+.nav-icon-size {
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+.vertical-line {
+    background: rgb(18, 20, 22);
+    /* flex-grow: 0; */
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 1px;
+    z-index: 99;
+}
+
+/* .navbar hr {
+    box-sizing: ;
+    flex-basis: 0;
+    display: inline-block;
+    margin: 0;
+    transform: rotate(90deg);
+    position: relative;
+    width: 1px;
+} */
+
+/* MOCK UP 1 */
+.custom-search-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-shrink: 1;
+    padding: 0;
+    width: auto;
+}
+
+.bottom-shadow {
+    background-color: transparent;
+    border-radius: 100px;
+    height: 46px;
+    margin: 0;
+    min-width: 1100px;
+    padding: 0;
+    position: absolute;
+    width: 1100px;
+    box-shadow: 0 4px 2px -2px rgba(18,20,22,0.76);
+    -webkit-box-shadow: 0 4px 2px -2px rgba(18,20,22,0.76);
+    -moz-box-shadow: 0 4px 2px -2px rgba(18,20,22,0.76);
+    z-index: -50;
+}
+
+.icon-position {
+    margin-left: 10px;
+    position: absolute;
+}
+
+.icon-search-position {
+    background-color: rgb(18, 20, 22);
+    border-radius: 100px;
+    color: white;
+    font-size: 0.8em;
+    margin-left: 305px;
+    padding: 12px;
+    position: absolute;
+}
+
+.custom-search-wrapper:first-child > input {
+    background: white;
+    border: 1px solid rgb(18, 20, 22);
+    border-right: transparent;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    height: 46px;
+    min-width: 300px;
+    padding-left: 32px;
+    width: 300px;
+}
+
+.custom-search-wrapper:nth-child(2) > input {
+    background: white;
+    border-bottom: 1px solid rgb(18, 20, 22);
+    border-left: transparent;
+    border-right: transparent;
+    border-top: 1px solid rgb(18, 20, 22);
+    height: 46px;
+    min-width: 200px;
+    padding-left: 35px;
+    width: 200px;
+}
+
+.custom-search-wrapper:nth-child(3) > input {
+    background: white;
+    border-bottom: 1px solid rgb(18, 20, 22);
+    border-left: transparent;
+    border-right: transparent;
+    border-top: 1px solid rgb(18, 20, 22);
+    height: 46px;
+    min-width: 250px;
+    padding-left: 35px;
+    width: 250px;
+}
+
+.custom-search-wrapper:nth-child(4) > input {
+    background: white;
+    border: 1px solid rgb(18, 20, 22);
+    border-left: transparent;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    height: 46px;
+    min-width: 350px;
+    padding-left: 40px;
+    width: 350px;
+}
+
+.custom-search-wrapper > .vertical-line {
+    background: rgb(18, 20, 22);
+    height: 26px;
+    margin-left: -1px;
+    position: absolute;
+    width: 1px;
+    z-index: 99;
+}
+
+.custom-search-wrapper > input::placeholder {
+    font-weight: 300;
+}
+
+.custom-search-wrapper > input:focus {
+    outline: 0;
+}
+
+/* END OF MOCK UP 1 */
+
+/* MOCK UP 2 */
+div > .flex-shrink-1:first-child {
+    background: white;
+    border: 1px solid rgb(18, 20, 22);
+    border-right: transparent;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    height: 46px;
+    width: 300px;
+}
+
+div > .flex-shrink-1:nth-child(3) {
+    background: white;
+    border-bottom: 1px solid rgb(18, 20, 22);
+    border-top: 1px solid rgb(18, 20, 22);
+    height: 46px;
+    width: 200px;
+}
+
+div > .flex-shrink-1:nth-child(5){
+    background: white;
+    border-bottom: 1px solid rgb(18, 20, 22);
+    border-top: 1px solid rgb(18, 20, 22);
+    height: 46px;
+    width: 250px;
+}
+
+div > .flex-shrink-1:last-child {
+    background: white;
+    border: 1px solid rgb(18, 20, 22);
+    border-left: transparent;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    height: 46px;
+    width: 350px;
+}
+
+div > .flex-shrink-1 > i {
+    margin-right: 10px;
+}
+/* END OF MOCK UP 2 */
+
+
+/* TESTING */
+/* .wrapper {
+    align-items: center;
+    background: white;
+    border: 1px solid;
+    border-radius: 100px;
+    display: flex;
+    height: 46px;
+    justify-content: center;
+    width: 1000px;
+}
+
+div > .flex-shrink-1:first-child {
+    margin-left: 5%;
+    padding: 11px 0;
+    width: 300px;
+}
+
+div > .flex-shrink-1:nth-child(2) {
+    padding: 11px 0;
+    width: 200px;
+}
+
+div > .flex-shrink-1:nth-child(3){
+    padding: 11px 0;
+    width: 250px;
+}
+
+div > .flex-shrink-1:last-child {
+    padding: 11px 0;
+    width: 350px;
+} */
+/* END OF TESTING */
