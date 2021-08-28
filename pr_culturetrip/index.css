@@ -42,6 +42,11 @@ body {
     justify-content: center;
 }
 
+.no-opacity,
+.no-opacity:hover {
+    opacity: 1;
+}
+
 /* NAVIGATION BAR SECTION */
 .custom-nav-fix {
     background-color: rgba(255, 255, 255, 0.95);
@@ -214,37 +219,62 @@ body {
 #hotel-cards {
     /* background-color: bisque; */
     height: 100vh;
-    padding-top: 10%;
+    margin: 0 10%;
+    padding-top: 5%;
+}
+
+.hotel-heading-wrap {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
 }
 
 .hotel-item {
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 282px;
     margin: 0 16px;
+    min-width: 242px;
     overflow: hidden;
-    width: 246px;
+    position: relative;
+    width: 316px;
 }
+
+/* .fbasis-5 {
+    flex-basis: 5%;
+}
+
+.fbasis-10 {
+    flex-basis: 10%;
+}
+
+.fbasis-12 {
+    flex-basis: 12%;
+} */
 
 .fbasis-100 {
     flex-basis: 100%;
 }
 
 .hotel-item > p {
+    flex-basis: 5%;
     font-size: 12px;
     letter-spacing: 0.5px;
     margin: 0;
     padding-top: 2px;
 }
 
-/* .overflow-wrapper {
-    height: 50%;
+.overflow-wrapper {
+    flex-basis: 65%;
     overflow: hidden;
-} */
+}
 
 .hotel-item img {
     transition: .3s;
+    height: 100%;
+    width: 100%;
 }
 
 .hotel-item img:hover {
@@ -261,17 +291,40 @@ body {
     cursor: pointer;
     color: var(--secondary-color);
     font-size: 1.2em;
-    margin: 8px 8px 0 200px;
+    right: 8px;
     padding: 10px 12px;
     position: absolute;
+    top: 8px;
 }
 
 .hotel-item .icon-card-position:hover {
     color: var(--third-color);
 }
 
-/* TESTING */
-.carousel-control-prev-icon,
+/* CAROUSEL CONTAINER & BUTTON SECTION */
+#carouselExampleControls {
+    margin-top: 2%;
+}
+
+.icon-override {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 100px;
+    background-size: 50% 50%;
+    opacity: 1;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+    margin-left: -85%;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    margin-right: -85%;
+  }
+
+/* .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 100px;
   width: 100px;
@@ -293,7 +346,7 @@ body {
   content: '<';
   font-size: 55px;
   color: red;
-}
+} */
 /* END OF TESTING */
 
 /* EXPLORE CITIES SECTION */
