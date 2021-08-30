@@ -259,7 +259,200 @@
     background-color: lightgrey;
     font-weight: 700;
   }
+  .jumbotron4 {
+    display: flex;
+    /* background-color: #f1b505; */
+    margin-top: 10%;
+    /* text-align: center; */
+    border-radius: 10px;
+    padding: 5%;
+    box-shadow: -20px 20px 31px -5px rgba(201,201,201,0.53);
+    -webkit-box-shadow: -20px 20px 31px -5px rgba(201,201,201,0.53);
+    -moz-box-shadow: -20px 20px 31px -5px rgba(201,201,201,0.53);
+  }
+  .jumbotron4 > div {
+    margin-left: 10%;
+    flex: 1;
+  }
+  .hurufKecil {
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--text-color);
+    /* letter-spacing: 3px; */
+    margin-left: 5%;
+  }
+  .jumbotron4 p {
+    color: var(--text-secondary);
+    font-size: 1.1em;
+    width: 73%;
+    font-weight: 500;
+    margin-left: 5%;
+  }
   
+  .last2 > button {
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 3%;
+    text-align: center;
+    width: 30%;
+    border-radius: 40px;
+    border-color: transparent;
+    background-color: var(--primary-color);
+    font-weight: 700;
+  }
+  .jumbotron5 {
+    display: flex;
+    /* background-color: #f1b505; */
+    margin-top: 10%;
+    /* text-align: center; */
+    border-radius: 10px;
+    padding: 5%;
+  }
+  .jumbotron5 > div {
+    flex: 1;
+  }
+  .gambar4 {
+    height: 60vh;
+    width: 90%;
+  }
+  .jumbotron5 p {
+    color: var(--text-secondary);
+    font-size: 1.2em;
+    width: 100%;
+    font-weight: 500;
+    margin-left: 10%;
+  }
+  .last4 > .input-text {
+    border-color: transparent;
+    color: var(--text-secondary);
+    border-radius: 40px;
+    /* font-size: 1em; */
+    width: 94%;
+    margin-left: 8%;
+    padding: 2.5%;
+    background-color:lightgrey ;
+    text-align: start;
+    margin-top: 5%;
+    /* margin-right: 15%; */
+    /* font-weight: 600; */
+  }
+  .last4 > .input-text:focus {
+    outline: transparent;
+  }
+  .last4 > .input-text::placeholder {
+    color: var(--text-secondary);
+    font-weight: 700;
+    font-size: 1em;
+  }
+  .last4 > button {
+    margin-left: 8%;
+    margin-top: 5%;
+    padding: 3%;
+    /* margin-right: 3%; */
+    text-align: center;
+    width: 100%;
+    border-radius: 40px;
+    border-color: transparent;
+    background-color: var(--primary-color);
+    font-weight: 700;
+    color: rgb(252, 243, 243);
+    font-size: 1em;
+  }
+  .last5 {
+    margin-top: 5%;
+  }
+  .footer {
+    display: flex;
+    /* background-color: #f1b505; */
+    margin-top: 10%;
+    /* text-align: center; */
+    border-radius: 10px;
+    padding: 5%;
+  }
+  .footer > div {
+    flex: 1;
+  }
+  .bitco1 {
+      margin: 1.2%;
+      font-weight: 800;
+      font-size: 1.5em;
+  }
+  .foot2 {
+    display: flex;
+    /* flex: 1; */
+    justify-content: space-between;
+  }
+  .address {
+    margin-top: 5%;
+    font-weight: 600;
+    font-size: 0.9em ;
+    margin-left: 1%;
+  }
+  .address1 {
+    margin-top: 2%;
+    font-weight: 600;
+    font-size: 0.9em ;
+    margin-left: 1%;
+  }
+  .help {
+    font-weight: 600;
+  }
+  .about {
+    font-weight: 600;
+  }
+  .social {
+    font-weight: 600;
+  }
+  .helpful p {
+    margin-top: 20%;
+  }
+  .abt p {
+    margin-top: 29%;
+  }
+  .scl p {
+    margin-top: 33%;
+  }
+.anak {
+  margin-top: 40%;
+  font-size: 0.9em;
+  font-weight: 600;
+  color:var(--text-secondary) ;
+}
+.anak1 {
+  margin-top: 40%;
+  font-size: 0.9em;
+  font-weight: 600;
+  color:var(--text-secondary) ;
+}
+.anak2 {
+  margin-top: 40%;
+  font-size: 0.9em;
+  font-weight: 600;
+  color:var(--text-secondary) ;
+}
+.cr {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.cright {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding-bottom: 20px;
+}
+.copyr {
+  margin-right: 3% ;
+  font-size: 0.9em;
+  font-weight: 600;
+  color:var(--text-secondary) ;
+}
+.privacy {
+  font-size: 0.9em;
+  font-weight: 600;
+  color:var(--text-secondary) ;
+}
+
   /* for tablet */
   @media only screen and (max-width: 768px) {
     /* Header */
