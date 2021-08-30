@@ -1,0 +1,368 @@
+* {
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+ }
+ body, html{
+     margin: 0;
+     padding: 0;
+ }
+ .container{
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+ }
+
+.color-line{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     height: 10px;
+     flex-grow: 1;
+     background: rgb(246,174,2);
+     background: linear-gradient(90deg, rgba(246,174,2,1) 0%, rgba(246,174,2,1) 12.5%, rgba(21,102,166,1) 12.5%, rgba(21,102,166,1) 25%, rgba(54,16,208,1) 25%, rgba(54,16,208,1) 37.5%, rgba(247,82,0,1) 37.5%, rgba(247,82,0,1) 50%, rgba(246,174,2,1) 50%, rgba(246,174,2,1) 62.5%, rgba(21,102,166,1) 62.5%, rgba(21,102,166,1) 75%, rgba(54,16,208,1) 75%, rgba(54,16,208,1) 87.5%, rgba(247,82,0,1) 87.5%, rgba(247,82,0,1) 100%);
+ }
+
+ header{
+     margin : 0 10%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     flex-direction: row;
+ }
+ header > .bitco{
+     align-items: flex-start;
+     padding: 25px 100px;   
+     font-weight: 700; 
+     font-size: 30px;
+ }
+ header > .menu{
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: flex-end;
+     padding: 0 100px;
+     font-weight: 500;
+     font-size: 20px;
+ }
+ .menu > div {
+     justify-content: space-between;
+     padding: 0 20px;
+ }
+ .menu > div:not(.login):hover{
+    cursor: pointer;
+    background-color: orange;
+    border-radius: 100px;
+    transition: 0.3s;
+    opacity: 0.6;
+ }
+ .login{
+     border: 2px solid orange;
+     padding: 20px;
+     border-radius: 100px;
+ }
+ .login:hover{
+    cursor: pointer;
+    background-color: lightskyblue;
+    border-radius: 100px;
+    transition: 0.3s;
+    opacity: 0.6;
+ }
+
+ content-1 {
+     margin: 0 10%;
+     display: flex;   
+     padding: 50px 100px;
+     align-items: center;
+     justify-content: space-between;
+     flex-direction: row;
+ }
+ content-1:first-child{
+    display: flex;
+    flex-direction: column;
+}
+ content-1 > div:first-child {
+     font-weight: 600;
+     font-size: 40px;
+ }
+ content-1 > div > p {
+     font-size: 25px;
+     font-weight: 500;
+     color:lightslategray;
+ }
+.email{
+     padding: 0 50px;
+ }
+.email > .input-email {
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    border-color: transparent;
+    border-radius: 100px;
+    box-shadow: 0px 9px 17px 0px rgba(117, 117, 117, 0.39);
+}
+.email > button{
+    margin: 10px;
+    padding: 15px;
+    border: transparent;
+    border-radius: 100px;
+    background-color: orange;
+    font-size: 20px;
+    font-weight: 500;
+}
+.email > button:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+content-2 {
+    margin: 0 10%;
+    display: flex;   
+    padding: 50px 100px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+content-2:first-child{
+   display: flex;
+   flex-direction: column;
+}
+content-2 > div:first-child {
+    font-weight: 600;
+    font-size: 40px;
+}
+content-2 > div > p {
+    font-size: 25px;
+    font-weight: 500;
+    color:lightslategray;
+}
+content-2 > div > div > button{
+    margin: 10px;
+    padding: 15px;
+    border: transparent;
+    border-radius: 100px;
+    background-color: orange;
+    font-size: 20px;
+    font-weight: 500;
+}
+content-2 > div > div > button:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+content-3 {
+    margin: 0 10%;
+    display: flex;   
+    padding: 50px 100px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+content-3:first-child{
+   display: flex;
+   flex-direction: column;
+}
+content-3 > div:first-child {
+    font-weight: 600;
+    font-size: 40px;
+}
+content-3 > div > p {
+    font-size: 25px;
+    font-weight: 500;
+    color:lightslategray;
+}
+content-3 > div > div > button{
+    margin: 10px;
+    padding: 15px;
+    border: transparent;
+    border-radius: 100px;
+    background-color: orange;
+    font-size: 20px;
+    font-weight: 500;
+}
+content-3 > div > div > button:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+content-4 {
+    margin: 0 20%;
+    display: flex;   
+    padding: 50px 100px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border: transparent;
+    border-radius: 75px;
+    box-shadow: 0px 9px 17px 0px rgba(117, 117, 117, 0.39);
+}
+content-4:first-child{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+content-4:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+ }
+content-4 > div:first-child {
+    font-weight: 600;
+    font-size: 40px;
+}
+content-4 > div > p {
+    font-size: 25px;
+    font-weight: 500;
+    color:lightslategray;
+}
+content-4 > div > button{
+    margin: 10px;
+    padding: 15px;
+    align-items: center;
+    border: transparent;
+    border-radius: 100px;
+    background-color: orange;
+    font-size: 20px;
+    font-weight: 500;
+}
+content-4 > div > button:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+content-5 {
+    margin: 0 10%;
+    display: flex;   
+    padding: 50px 100px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+content-5:first-child{
+   display: flex;
+   flex-direction: column;
+}
+content-5 > div > p:first-child {
+    font-size: 25px;
+    font-weight: 500;
+    color:lightslategray;
+}
+content-5 > div > p:last-child {
+    font-size: 20px;
+    font-weight: 500;
+    color:lightslategray;
+}
+.address{
+    display: flex;
+    padding: 0 50px;
+    flex-direction: column;
+}
+.address > .input-address {
+   margin: 10px;
+   padding: 10px;
+   width: 95%;
+   height: 60px;
+   background-color: lightgray;
+   opacity: 0.6;
+   font-size: 20px;
+   border-color: transparent;
+   border-radius: 100px;
+   box-shadow: 0px 9px 17px 0px rgba(117, 117, 117, 0.39);
+}
+.address > button{
+   margin: 10px;
+   padding: 15px;
+   border: transparent;
+   border-radius: 100px;
+   background-color: orange;
+   font-size: 20px;
+   font-weight: 500;
+}
+.address > button:hover{
+   cursor: pointer;
+   background-color: red;
+   color: white;
+}
+
+content-6 {
+    margin: 0 10%;
+    display: flex;   
+    padding: 50px 100px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+content-6:first-child{
+    align-items: flex-start;
+}
+
+content-6 > div > .bitco{
+    font-weight: 700;
+    font-size: 30px;
+}
+content-6 > div > p{
+    font-weight: 500;
+    font-size: 20px;
+    color:grey;
+}
+content-6 > .links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+content-6 > .links > .link-menu{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    font-weight: 600;
+}
+content-6 > .links > .link-menu > div {
+    justify-content: space-between;
+    padding: 0 30px;
+}
+content-6 > .links > .link-option{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: 500;
+    color: lightgray;
+}
+content-6 > .links > .link-option > .link-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+content-6 > .links > .link-option > .link-1 > div {
+    padding: 10px;
+}
+content-6 > .links > .link-option > .link-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+content-6 > .links > .link-option > .link-2 > div {
+    padding:  10px;
+}
+content-6 > .links > .link-option > .link-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+content-6 > .links > .link-option > .link-3 > div {
+    padding: 10px;
+}
+
+content-7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: lightgray;
+    justify-content: space-between;
+}
