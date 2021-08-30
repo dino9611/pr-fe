@@ -1,0 +1,124 @@
+* {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary-color: #f1b505;
+    --text-color: #1d1d1d;
+    --text-secondary: #adadad;
+  }
+
+.main-container {
+    padding: 0px 3%;
+}
+
+
+/* HEADER */
+
+
+.header {
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0px;
+}
+
+.bitco {
+    /* background-color: cyan; */
+    margin-left: 5%;
+    padding: 1.5% 1%;
+    width: 10%;
+    font-weight: 800;
+
+}
+
+.menu-bars {
+    margin: 1.25%;
+    font-size: 1.25em;
+    display: none;
+}
+
+.menu-tengah {
+    /* background-color: coral; */
+    padding: 1.5% 1%;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    margin-left: 25%;
+    margin-right: -5%;
+    font-weight: 600;
+}
+
+
+.signin {
+    /* background-color: crimson; */
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1.25% 1%;
+    width: 6.5%;
+    /* text-transform: uppercase; */
+    /* font-size: 1.1em; */
+    font-weight: 600;
+    border-radius: 70px;
+    /* border: 2px solid var(--primary-color); */
+    border: 2px solid;
+    text-align: center;
+    transition: 300ms;
+}
+
+.signin:hover {
+    cursor: pointer;
+    /* color: var(--primary-color); */
+    color: cyan;
+    background-color:black;
+    opacity: 0.6;
+  }
+
+/* HEADER END */
+
+/* Jumbotron1 */
+
+.jumbotron1 {
+    background-color: antiquewhite;
+    display:flex;
+    flex-direction: column;
+    /* height: 80vh; */
+    align-items: center;
+
+}
+
+.jumbotron1 > h1 {
+    background-color: aquamarine;
+    font-size: 3.5em;
+    width: 40%;
+    text-align: center;
+    line-height: 1.2;
+    color: var(--primary-color);
+    margin-bottom: 2%;
+}
+
+.jumbotron1 > div {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30%;
+    width: 100%;
+
+}
+
+.shape {
+    width: 100%;
+    padding: 1.5vh 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.jumbotron1 .yearly {
+    background-color: beige;
+    border-radius: 30px;
+    /* width: 50%; */
+}
+
