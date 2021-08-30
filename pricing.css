@@ -82,6 +82,7 @@
 }
 /* header finish */
 
+
 /* jumbotron1 */
 .jumbotron1 {
     display: flex;
@@ -175,6 +176,7 @@
 }
 /* jumbotron1 finish */
 
+
 /* jumbotron 2 start */
 .jumbotron2 {
     display: flex;
@@ -257,6 +259,72 @@ a {
 }
 /* jumbotron2 finish */
 
+
+/* sponsor start */
+.sponsor {
+    background-color: whitesmoke;
+    box-shadow: 0px 9px 17px 0px rgba(117, 117, 117, 0.39);
+    -webkit-box-shadow: 0px 9px 17px 0px rgba(117, 117, 117, 0.39);
+    -moz-box-shadow: 0px 9px 17px 0px rgba(117, 117, 117, 0.39);
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2% 0px;
+}
+
+.sponsor > div {
+    display: flex;
+}
+
+.nestle {
+    height: 5vh;
+    opacity: 80%;
+}
+
+.cocacola {
+    height: 7vh;
+    opacity: 60%;
+}
+
+.mcd {
+    height: 6vh;
+}
+
+.food {
+    height: 10vh;
+    opacity: 60%;
+}
+
+.reeses {
+    height: 5vh;
+    opacity: 40%;
+}
+
+
+.sevel {
+    height: 8vh;
+    opacity: 80%;
+}
+/* sponsor finish */
+
+/* footer start */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5%;
+    margin-top: 10%;
+}
+
+.footerText > h3 {
+    margin-bottom: 20px;
+}
+/* footer finish */
+
+
 /* FOR TABLET */
 @media only screen and (max-width: 800px) {
     /* Header */
@@ -300,6 +368,11 @@ a {
     .jumbotron2 {
         padding: 0px 0%;
     }
+
+    /* footer */
+    .footer {
+        font-size: 2vh;
+    }
 }
   
   /* FOR MOBILE */
@@ -336,5 +409,21 @@ a {
     .jumbotron2 {
         padding: 0px 0%;
         height: 42vh;
+    }
+
+    /* sponsor */
+    .trusted {
+        font-size: 3vh;
+    }
+
+    .sponsor > div {
+        flex-basis: 33.3%;
+        justify-content: center;
+    }
+
+    /* footer */
+    .footer {
+        font-size: 1.5vh;
+        margin-top: 15%;
     }
 }
